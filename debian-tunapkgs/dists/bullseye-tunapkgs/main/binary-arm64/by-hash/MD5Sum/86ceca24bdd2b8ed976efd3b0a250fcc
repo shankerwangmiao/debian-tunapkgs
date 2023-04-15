@@ -1,0 +1,6 @@
+Origin: debian-tunapkgs bullseye-tunapkgs
+Label: debian-tunapkgs bullseye-tunapkgs
+Archive: bullseye-tunapkgs
+Architecture: arm64
+Component: main
+Acquire-By-Hash: yes

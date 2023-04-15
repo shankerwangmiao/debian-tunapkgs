@@ -1,0 +1,276 @@
+Package: bird2
+Priority: optional
+Section: net
+Installed-Size: 1624
+Maintainer: Jakub Ružička <jakub.ruzicka@nic.cz>
+Architecture: arm64
+Version: 2.0.12-5+shanker+p1
+Depends: adduser, ucf, libc6 (>= 2.34), libreadline8 (>= 6.0), libssh-gcrypt-4 (>= 0.8.0), libtinfo6 (>= 6)
+Pre-Depends: init-system-helpers (>= 1.56~)
+Suggests: bird2-doc
+Conflicts: bird
+Filename: pool/main/b/bird2/bird2_2.0.12-5+shanker+p1_arm64.deb
+Size: 707768
+MD5sum: 3b9510aff79de7e626cc513b446be0a4
+SHA1: e0e865c78ac91fe09401791d1b1c1ce7ea294d4a
+SHA256: 48dc62130772d0a343a9fd2b185a2d7a54a2f65cb0ff1f4f0ecb54db2a6c7cac
+SHA512: b8821ece3b79d5287902a12b0ad31a17449e68b342d88a31937c204908141cd13b8bc426b1ff5a0ecde897e6a97c675820a910bafa28a74575f08badce8bda54
+Description: Internet Routing Daemon
+ BIRD is an Internet routing daemon with full support for all the major
+ routing protocols. It allows redistribution between protocols with a
+ powerful route filtering syntax and an easy-to-use configuration
+ interface.
+ .
+ BIRD supports IPv4 and IPv6 versions of OSPF, RIP, BGP and Babel routing
+ protocols. It also supports supplementary protocols like BFD, RPKI-Router
+ and IPv6 router advertisements.
+Homepage: https://bird.network.cz/
+
+Package: bird2-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 1630
+Maintainer: Jakub Ružička <jakub.ruzicka@nic.cz>
+Architecture: arm64
+Source: bird2
+Version: 2.0.12-5+shanker+p1
+Depends: bird2 (= 2.0.12-5+shanker+p1)
+Filename: pool/main/b/bird2/bird2-dbgsym_2.0.12-5+shanker+p1_arm64.deb
+Size: 1457884
+MD5sum: 20e866851aef885d45d4dc51eb8e0ede
+SHA1: 93605a3031c2158ecef1d6690b4a539a1d8b58b1
+SHA256: 2ce37e99fdcf0752e7ad532b10c066609fcc063fd3771efede13ec1dcfc7f8eb
+SHA512: 720d9e0f365a0a95d0146450f5d84a11b1c5d7a693647e64a33f682d9bfb6e6eae798fa915bc6c180f38f45899e8e83f5ab6813bf532ae70f3bffaf648518a26
+Description: debug symbols for bird2
+Auto-Built-Package: debug-symbols
+Build-Ids: 3c650b0715688c442a5f471aa62338e66e4c6b91 3f0cfae205bf25b8491d688c1308168d9010d7f7 5dd8028bec2240bf21576a9e9adf2f1925aa8368
+
+Package: bird2-doc
+Priority: optional
+Section: doc
+Installed-Size: 1832
+Maintainer: Jakub Ružička <jakub.ruzicka@nic.cz>
+Architecture: all
+Source: bird2
+Version: 2.0.12-5+shanker+p1
+Filename: pool/main/b/bird2/bird2-doc_2.0.12-5+shanker+p1_all.deb
+Size: 1388608
+MD5sum: f05efae7d54986ec2731d69c6f990ddd
+SHA1: ea737ca683b8e0a9c8899cc43de5589600a0e266
+SHA256: 2c0ba63a9c892987eef6ccc21883e3f59006059c3bc5852d405d9691b549a894
+SHA512: 853d75a513a71c19e950d5c19200d0b8521b32d5841527b39ffcbe67957e51256db624c9249a534baf433b0ca1e83b14ee98828a95a60f9a53f3de1e115ca82d
+Description: Internet Routing Daemon - documentation
+ BIRD is an Internet routing daemon with full support for all the major
+ routing protocols. It allows redistribution between protocols with a
+ powerful route filtering syntax and an easy-to-use configuration
+ interface.
+ .
+ This package provides the user and developer documentation.
+Homepage: https://bird.network.cz/
+
+Package: hinic-dkms
+Priority: extra
+Section: kernel
+Installed-Size: 1304
+Maintainer: Miao Wang <shankerwangmiao@gmail.com>
+Architecture: all
+Source: hinic
+Version: 0+git20230415+5.10.0-136.28.0-1
+Depends: dkms (>= 2.1.0.0)
+Filename: pool/main/h/hinic/hinic-dkms_0+git20230415+5.10.0-136.28.0-1_all.deb
+Size: 198608
+MD5sum: d5f4d22bdceb7dc5a84b7e83a8a9fcdd
+SHA1: a236a37da9dd672e62e6cf900d0079fe624a0809
+SHA256: 198e26110e53db552c18a696a8586532a893db4c02b7bd0d33a6d1e3171a9083
+SHA512: 24237cda2c1eb7f27e003cfe85376f9d70567237f9c1248a57a0cd445b1fc2910dfbf704cb185d68d4f171e6ea548b089d52d99ebe44596ea9e05a7333eca0a9
+Description: Huawei HiNIC PCI Express Linux driver
+ Huawei HiNIC PCI Express Linux driver
+Homepage: https://gitee.com/openeuler/kernel/tree/OLK-5.10/drivers/net/ethernet/huawei/hinic
+
+Package: libnginx-mod-http-fake-ip
+Priority: optional
+Section: httpd
+Installed-Size: 84
+Maintainer: Miao Wang <shankerwangmiao@gmail.com>
+Architecture: arm64
+Version: 1:0.0.1-1
+Depends: nginx-abi-1.22.1-7, libc6 (>= 2.17)
+Recommends: nginx
+Filename: pool/main/libn/libnginx-mod-http-fake-ip/libnginx-mod-http-fake-ip_0.0.1-1_arm64.deb
+Size: 5716
+MD5sum: 1fba66587d357e1e99feb051d45c8b85
+SHA1: 2eb4199801d8c11f0566b52458b6e3efdd087017
+SHA256: c0a118683277c5213e64b2b7e46fa8499b76c3df90579cde28311bdf0583a8ee
+SHA512: cc65116b73b498937ad050e0e17cf4169a4cb9d154f4d89e0a80333f850bfa6d048b757b6e4532cba8d32573ce9b78a263e815c29f8afe16878791b56b616d7a
+Description: Fake IP support for Nginx
+  TBD TBD
+Homepage: https://github.com/shankerwangmiao/ngx-fake-ip-module
+Multi-Arch: foreign
+
+Package: libnginx-mod-http-fake-ip-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 46
+Maintainer: Miao Wang <shankerwangmiao@gmail.com>
+Architecture: arm64
+Source: libnginx-mod-http-fake-ip
+Version: 1:0.0.1-1
+Depends: libnginx-mod-http-fake-ip (= 1:0.0.1-1)
+Filename: pool/main/libn/libnginx-mod-http-fake-ip/libnginx-mod-http-fake-ip-dbgsym_0.0.1-1_arm64.deb
+Size: 32048
+MD5sum: 7aa0966c29638ec0c6327bd0924247b2
+SHA1: 494886189cf7a0245cb32942ba66da1b8b80f7ca
+SHA256: 362353df3129b847fbec4b4fc41990d5e55e6516a1274033ba5495b5b4f572d1
+SHA512: 270235fe90eedc73f686b38adeef8d5f99ec97031e116a90f439106f7ac9e3e93a0889d8d965d54ab2cc79e2b54c115525483fc6c876ce9d528aed70815d096d
+Description: debug symbols for libnginx-mod-http-fake-ip
+Auto-Built-Package: debug-symbols
+Build-Ids: 7809134aeb68c470b906595a89711805757aa03c
+
+Package: libnginx-mod-http-js
+Priority: optional
+Section: httpd
+Installed-Size: 923
+Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
+Architecture: arm64
+Source: libnginx-mod-js
+Version: 0.7.9-2+shanker+p1
+Depends: nginx-abi-1.22.1-7, libc6 (>= 2.35)
+Recommends: nginx
+Filename: pool/main/libn/libnginx-mod-js/libnginx-mod-http-js_0.7.9-2+shanker+p1_arm64.deb
+Size: 288368
+MD5sum: 2b415c54fe9672d55d9137cbc70861ce
+SHA1: fdf01712d5fa3428adfe56d5fa0802aef4c77c30
+SHA256: 64687e3f97745627c6f658bdc8452225104361f2e03ec591fb71df0e0e1f4f86
+SHA512: 9c94fab59f3015254cc634e5c413a2189fda44d08c3e769e53e4ba9de8d9373445c0feb429fed647e6c593d7d5b93169ccadbe6cbedb5011662f821468d76dcd
+Description: JavaScript HTTP module for Nginx
+ This module extends Nginx with configuration directives
+ that allows one to run a subset of ECMAScript 5.1 (and later
+ extensions) language.
+ It features integration with
+  - response body filter
+  - location content handler
+  - http, server, location variables
+Homepage: https://nginx.org/en/docs/njs/
+
+Package: libnginx-mod-http-js-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 1197
+Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
+Architecture: arm64
+Source: libnginx-mod-js
+Version: 0.7.9-2+shanker+p1
+Depends: libnginx-mod-http-js (= 0.7.9-2+shanker+p1)
+Filename: pool/main/libn/libnginx-mod-js/libnginx-mod-http-js-dbgsym_0.7.9-2+shanker+p1_arm64.deb
+Size: 1110848
+MD5sum: dd21d8d681ddc99a430de44b7825b713
+SHA1: ea24feaf218be2eb626d1559f9a9d688420424d6
+SHA256: f4b51618c716acf53d651daf4112cb69a0ac99cf6c4c298e36b27c1a22dd7b1d
+SHA512: 5ead53ff41b7cdc69be6b71cb0301d932cf6e0d34324677ef1a52679ce3c648e2a8d3a8895cda6cc5dc1fe70d4c653b0bbccf0495a4f8be2ea75812f5f6363c4
+Description: debug symbols for libnginx-mod-http-js
+Auto-Built-Package: debug-symbols
+Build-Ids: eb154ff407d406e677bfa796bafc971246adab5e
+
+Package: libnginx-mod-stream-js
+Priority: optional
+Section: httpd
+Installed-Size: 921
+Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
+Architecture: arm64
+Source: libnginx-mod-js
+Version: 0.7.9-2+shanker+p1
+Depends: libnginx-mod-stream (<< 1.22.1.1~), libnginx-mod-stream (>= 1.22.1), nginx-abi-1.22.1-7, libc6 (>= 2.35)
+Recommends: nginx
+Filename: pool/main/libn/libnginx-mod-js/libnginx-mod-stream-js_0.7.9-2+shanker+p1_arm64.deb
+Size: 282644
+MD5sum: e59caffffb626e33e69cdc4ba1f5b6e9
+SHA1: 0afecd06d54c5e310f6393a051e096faef2ae7cb
+SHA256: a02de4f3e09caaaa628d5e9a31a8be8f43c676f2c469d250343d6eedc4a73169
+SHA512: 29a3861fd42fb2d8414f0c51530579fdd90bd21b9b8868785efb637f70560253bae05234db959ff57872624f893bc263e6ca51a8741df7c46bfce2965f7c59c0
+Description: JavaScript Stream module for Nginx
+ This module extends Nginx with configuration directives
+ that allows one to run a subset of ECMAScript 5.1 (and later
+ extensions) language.
+ It features integration with
+  - the access phase
+  - the content phase
+  - stream, server variables
+Homepage: https://nginx.org/en/docs/njs/
+
+Package: libnginx-mod-stream-js-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 1162
+Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
+Architecture: arm64
+Source: libnginx-mod-js
+Version: 0.7.9-2+shanker+p1
+Depends: libnginx-mod-stream-js (= 0.7.9-2+shanker+p1)
+Filename: pool/main/libn/libnginx-mod-js/libnginx-mod-stream-js-dbgsym_0.7.9-2+shanker+p1_arm64.deb
+Size: 1076876
+MD5sum: 807d5c3e4f42fbe921deded5e863fc25
+SHA1: fac04cfe3b3f50ee9b694b1e605365278b66e5ce
+SHA256: d898a586b2984b8c90187e116852905269f4059b01489dd54e3340493e240bb1
+SHA512: 8f175525abfe1d6433df4e08ecf3b70b82a98cd7214dcc90eb552566ca89c8d3c063c0b910b3960c4a414902a00f69bc6ecff84715bea99c5e40e856bae55db0
+Description: debug symbols for libnginx-mod-stream-js
+Auto-Built-Package: debug-symbols
+Build-Ids: 415cb09055a14f03185913c913098acd3ef32234
+
+Package: njs
+Priority: optional
+Section: httpd
+Installed-Size: 848
+Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
+Architecture: arm64
+Source: libnginx-mod-js
+Version: 0.7.9-2+shanker+p1
+Depends: libc6 (>= 2.35), libpcre2-8-0 (>= 10.32), libssl3 (>= 3.0.0)
+Filename: pool/main/libn/libnginx-mod-js/njs_0.7.9-2+shanker+p1_arm64.deb
+Size: 265960
+MD5sum: 48e4f803922a1e86aac38ea539d63e2e
+SHA1: 9050ccbba8b106eb07ef71d855f8cec3dc107d61
+SHA256: 7084fcd7e38e8428fc0862ff337a0db027467e93127e04e5e5acde64dc9bfccc
+SHA512: 18356b8a57064abd6bbbc87230c680a9e4d221080a2bc386e681d6537bab0ffef57acfd6fb2973cd609d5aabe34298078f01bf1f11c53c08f485fcc37f02b01b
+Description: JavaScript for Nginx command-line utility
+ Run and debug scripts written for libnginx-mod-stream-js and
+ libnginx-mod-http-js Nginx modules.
+ This command is independent of Nginx and does not run inside it,
+ in consequence, HTTP and Stream objects are not available.
+Homepage: https://nginx.org/en/docs/njs/
+
+Package: njs-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 1099
+Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
+Architecture: arm64
+Source: libnginx-mod-js
+Version: 0.7.9-2+shanker+p1
+Depends: njs (= 0.7.9-2+shanker+p1)
+Filename: pool/main/libn/libnginx-mod-js/njs-dbgsym_0.7.9-2+shanker+p1_arm64.deb
+Size: 1017352
+MD5sum: 3f8ff6410b97d8bdc9ca058a8ae4bae2
+SHA1: fa6aad5c65e6369c2b7565271a28aeb94c9c7d5b
+SHA256: 1254409e30911384e66d03a0368cd0e56edaddc90ef52735d563ed8d7da33d1a
+SHA512: 6c26727aa82aef46259d8c3abf71937cea79798821fada8c2c8e5fa4cf904c73ca16316345b93eac8bc842112d1484725f3cb9392611f932f98497f66caaff95
+Description: debug symbols for njs
+Auto-Built-Package: debug-symbols
+Build-Ids: 10d60a490d718eb19fee86190aa3f12b072ee9b3
+
+Package: vxlan-huai-utils
+Priority: optional
+Section: admin
+Installed-Size: 26
+Maintainer: Aron Xu <happyaron.xu@gmail.com>
+Architecture: all
+Version: 1.0
+Depends: python3:any (>= 3.5), python3-yaml, ifupdown
+Filename: pool/main/v/vxlan-huai-utils/vxlan-huai-utils_1.0_all.deb
+Size: 2980
+MD5sum: a30b3cf6686342f5739f5baddbcbb98c
+SHA1: a21c2c1506bc546fe39dead6133394ef0dbb552f
+SHA256: 1c0df39ee0a2df093d7398102824d2aac195560ba594f6f1644f0327250f1c00
+SHA512: 4559def6dcf12447ad94ba6d4e1c87d701a67a4524e66be3c97d99267f9bfef54e9f62f01ca219f4094802d2380a37fbb6fa5bcee33025f431d454e0428db0d4
+Description: vxlan utilities by shanker huai
+ vxlan utilities by shanker huai
+
