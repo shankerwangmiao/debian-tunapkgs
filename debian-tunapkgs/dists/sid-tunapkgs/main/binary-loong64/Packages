@@ -1,0 +1,591 @@
+Package: efibootmgr
+Priority: optional
+Section: admin
+Installed-Size: 91
+Maintainer: Debian UEFI Maintainers <debian-efi@lists.debian.org>
+Architecture: loong64
+Version: 17-2
+Depends: libc6 (>= 2.37), libefiboot1 (>= 38), libefivar1 (>= 38), libpopt0 (>= 1.14)
+Filename: pool/main/e/efibootmgr/efibootmgr_17-2_loong64.deb
+Size: 26888
+MD5sum: ea8ccf2a1f3abee69230694a2f80197c
+SHA1: 01b11383ee13d27d52f2f904219dd02b0621b6c7
+SHA256: 5e4bba6bc118960ade259532e052d72a0e49061691850cea0025684cd5a23df3
+SHA512: 1d8cedecda62f03ee0d1dbed637ca5f79c8b1f14945a50c8ce2085663fdbacaec8027a986ed9478b53ab6a0f81628e9147ee9b175a752f0c7853453687ff0340
+Description: Interact with the EFI Boot Manager
+ This is a Linux user-space application to modify the Intel Extensible
+ Firmware Interface (EFI) Boot Manager configuration. This application can
+ create and destroy boot entries, change the boot order, change the next
+ running boot option, and more.
+ .
+ Additional information about (U)EFI can be found at http://www.uefi.org/.
+ .
+ Note: efibootmgr requires that the kernel module efivars be loaded prior
+ to use. 'modprobe efivars' should do the trick if it does not
+ automatically load.
+Multi-Arch: foreign
+
+Package: efibootmgr-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 82
+Maintainer: Debian UEFI Maintainers <debian-efi@lists.debian.org>
+Architecture: loong64
+Source: efibootmgr
+Version: 17-2
+Depends: efibootmgr (= 17-2)
+Filename: pool/main/e/efibootmgr/efibootmgr-dbgsym_17-2_loong64.deb
+Size: 54976
+MD5sum: 02c69e9e6328d03f068e315018ab6342
+SHA1: b8cd7a6b43fcfc9ae904980852ce40a275edd0da
+SHA256: f117b97559375ee526adc391cbfca8021febd824dde3f0f82986f4154d0acf88
+SHA512: 01d0216fd16f96fae5236be9d954674a6cead706af7f236ac5d3a7dd2babf4860acd0c2aa7b7ee22ca0b1ca715b5a398bff99a41cd6e9f12c60717609f2ae279
+Description: debug symbols for efibootmgr
+Auto-Built-Package: debug-symbols
+Build-Ids: 82a5ae8ba6119825664424f24c36e4f281bcad4f 97692996484bd8978126956dd162161c6d274fdf
+
+Package: golang-github-cilium-ebpf-dev
+Priority: optional
+Section: golang
+Installed-Size: 2848
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Architecture: all
+Source: golang-github-cilium-ebpf
+Version: 0.12.2-1
+Depends: golang-golang-x-sys-dev (>= 0.0~git20211117~)
+Filename: pool/main/g/golang-github-cilium-ebpf/golang-github-cilium-ebpf-dev_0.12.2-1_all.deb
+Size: 1547080
+MD5sum: b713f8c2e3d23ba42fbcf19aee6354a2
+SHA1: 360301242e9d7bb06493f334c2782aa927943328
+SHA256: 175e7e30690a529ded1acf2c50a866a87868a8b96f0a85810ea03309a2f8002d
+SHA512: aeb831759db2549398365d4367e4d9a0cefec75fdf6611f82bc1f9587fa2623dab6a62b57c7cd0566ecee57a92745b7aa92b0fc8e27dbf534d9aff5bf5ead6a9
+Description: eBPF Library for Go
+ eBPF is a pure Go library that provides utilities for loading, compiling,
+ and debugging eBPF programs. It has minimal external dependencies and
+ is intended to be used in long running processes.
+Homepage: https://github.com/cilium/ebpf
+Multi-Arch: foreign
+
+Package: grub-common
+Priority: optional
+Section: admin
+Installed-Size: 17014
+Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
+Architecture: loong64
+Source: grub2
+Version: 2.12~rc1-11
+Replaces: grub-coreboot (<< 2.00-4), grub-efi (<< 1.99-1), grub-efi-amd64 (<< 2.00-4), grub-efi-ia32 (<< 2.00-4), grub-efi-ia64 (<< 2.00-4), grub-ieee1275 (<< 2.00-4), grub-linuxbios (<< 1.96+20080831-1), grub-pc (<< 2.00-4), grub-yeeloong (<< 2.00-4), init-select
+Depends: libc6 (>= 2.37), libdevmapper1.02.1 (>= 2:1.02.36), libefiboot1 (>= 38), libefivar1 (>= 38), libfreetype6 (>= 2.2.1), libfuse3-3 (>= 3.2.3), liblzma5 (>= 5.1.1alpha+20120614), gettext-base
+Recommends: os-prober (>= 1.33)
+Suggests: multiboot-doc, mtools, xorriso (>= 0.5.6.pl00), desktop-base (>= 4.0.6), console-setup
+Conflicts: init-select
+Breaks: apport (<< 2.1.1), friendly-recovery (<< 0.2.13), lupin-support (<< 0.55), mdadm (<< 2.6.7-2)
+Filename: pool/main/g/grub2/grub-common_2.12~rc1-11_loong64.deb
+Size: 2773728
+MD5sum: 1400d8dfe96e9c59cdcd1b1e88de979b
+SHA1: 0fd09fcb1870be95da3a525eba3356deb0adb068
+SHA256: 9ecb8381b7d02738006cff61e4e62c8fbed039370cc6548dfa62c666927c9151
+SHA512: a968d4ca52a71edeaf80497577aa9c6e3dd93dee7ccc21c4448904d60c09ef5b62b4bb66c90f40253ac48f1eb87c481ecb4eaf8dfb3b9e57b8a826b3bb154315
+Description: GRand Unified Bootloader (common files)
+ This package contains common files shared by the distinct flavours of GRUB.
+ It is shared between GRUB Legacy and GRUB 2, although a number of files
+ specific to GRUB 2 are here as long as they do not break GRUB Legacy.
+ .
+ grub-mkrescue needs the suggested packages mtools (for UEFI targets) and
+ xorriso.
+Built-Using: lzo2 (= 2.10-2)
+Homepage: https://www.gnu.org/software/grub/
+Multi-Arch: foreign
+
+Package: grub-common-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 12124
+Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
+Architecture: loong64
+Source: grub2
+Version: 2.12~rc1-11
+Depends: grub-common (= 2.12~rc1-11)
+Filename: pool/main/g/grub2/grub-common-dbgsym_2.12~rc1-11_loong64.deb
+Size: 11132204
+MD5sum: 395019063bc2e351cab5bad22c485602
+SHA1: 9a4ef177f7b4cf199446bde5007917c3ed3026af
+SHA256: 7f7419efe013038a2a54ec8fbbb881b74d361b2fce8178b224c8386496dfd4a9
+SHA512: aeae947377d61a2928e21940e06d5eb68ea562dd8a39d893811b128d2dcf01fb3d0d0eba838e10d86723a6d731fe1adb320bd8374000e8cddb77770112691408
+Description: debug symbols for grub-common
+Auto-Built-Package: debug-symbols
+Build-Ids: 13b916c7444f9bc88b49456473eb5c9e79a030a6 19af67ea6a7bb37d368a9baefcb1ba471621830f 2db75f0f9232c52bbcbb63599aae0f14c874d6e7 355de3ca713bc3b2f4d9e606d468e6380b3529ce 4b72d5b551ed8f73207a1720bca421937db57861 4cfc4c359307e9f4bff0eee2a0f475f0685f17dc 50252037434f18e875ffce4c2686cf3afd8970c1 6961fc4374bf87298be5ee8a75b04b0b3e1058ae 6d2c825cb44bdf53e1973f2a7f319eaf35819328 8ab042dc46777ebf882bdaef5516ad24db143b2f 8f34ef862b2ae255dc4b08de9bedb54a1319327c 9d8b1c2163925f78157436265d3396e091b2c178 aab95f0cdd41c4767c467fa6e220c79e2884c3c7 b9bbced64d79490b000acf4ae57b571ced98a5ed bc036d184a188f0b4186cc8aeb5ba401a32181b9 bf41c3edd759706b47eaf054e50c52cb8c51d12a cff6e7df091705ef3fe934dd46afc2c13b7c31e7 e1fe85657660042eed44dff358746059ca8ff4a2 e58ac21f13eaf51be09e7ac87592590f5b95bef8 ffb3c49c9200e5be6f7149dffc679f6b0d3a2a34
+
+Package: grub-efi
+Priority: optional
+Section: admin
+Installed-Size: 314
+Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
+Architecture: loong64
+Source: grub2
+Version: 2.12~rc1-11
+Depends: grub-efi-loong64 (= 2.12~rc1-11)
+Filename: pool/main/g/grub2/grub-efi_2.12~rc1-11_loong64.deb
+Size: 295112
+MD5sum: 180ad4bd54ac25b733e2df69e271c5bc
+SHA1: 2362309066be86ff2a4a1140920bd4bcd2d544c1
+SHA256: ab73dec93e724f04041bd474a316e2ebfaa8d7ac40c23df8244e8359583f4c5d
+SHA512: 753aba6b048968ba3f7b56fea303db0cf95eecf8aba0570a5def47712576ecfb78cfa0dfab4deaa63c2448d18b446c4dc3b64fdbc86255bdfa2d4bea9dff9fce
+Description: GRand Unified Bootloader, version 2 (dummy package)
+ This is a dummy package that depends on the grub-efi-$ARCH package most likely
+ to be appropriate for each architecture.
+Homepage: https://www.gnu.org/software/grub/
+Multi-Arch: foreign
+
+Package: grub-efi-loong64
+Priority: optional
+Section: admin
+Installed-Size: 486
+Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
+Architecture: loong64
+Source: grub2
+Version: 2.12~rc1-11
+Depends: debconf (>= 0.5) | debconf-2.0, grub2-common (>= 2.02~beta2-9), grub-efi-loong64-bin (= 2.12~rc1-11), ucf
+Filename: pool/main/g/grub2/grub-efi-loong64_2.12~rc1-11_loong64.deb
+Size: 338488
+MD5sum: ecf5cef7094395c5e70957187cae2895
+SHA1: 51b07bc96ad298b7572abef6dec84a076d6c9022
+SHA256: 0328e0c18f695c96731a42144c4cb152e2dda96b97c918953653593c3ef5ba94
+SHA512: 4c1931dd0b27a06ae4e83be46b1f186b2f6e9941b107ac3860d34da2acc754674904f53d672c0156fa2a42ce71a27f2f85772c9abcdfc4bb49c44c80ae86f9a6
+Description: GRand Unified Bootloader, version 2 (loong64 UEFI version)
+ GRUB is a portable, powerful bootloader.  This version of GRUB is based on a
+ cleaner design than its predecessors, and provides the following new features:
+ .
+  - Scripting in grub.cfg using BASH-like syntax.
+  - Support for modern partition maps such as GPT.
+  - Modular generation of grub.cfg via update-grub.  Packages providing GRUB
+    add-ons can plug in their own script rules and trigger updates by invoking
+    update-grub.
+ .
+ This is a dependency package for a version of GRUB that has been built for
+ use on LoongArch 64-bit systems with UEFI.  Installing this package indicates that
+ this version of GRUB should be the active boot loader.
+Homepage: https://www.gnu.org/software/grub/
+Multi-Arch: foreign
+
+Package: grub-efi-loong64-bin
+Priority: optional
+Section: admin
+Installed-Size: 4003
+Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
+Architecture: loong64
+Source: grub2
+Version: 2.12~rc1-11
+Depends: grub-common (>= 2.02~beta2-9)
+Recommends: efibootmgr
+Filename: pool/main/g/grub2/grub-efi-loong64-bin_2.12~rc1-11_loong64.deb
+Size: 966960
+MD5sum: f532be3cb50024e6fefe19fce2860dde
+SHA1: 40312b54c3deba65a9cc310f0edc55485545aa9f
+SHA256: 9bc2ac4fb7d81bf7a6b11d252cea520c17e88b7e16096857e5d8b17bbf9b30b1
+SHA512: f6514fb366faaf2721e9042d47ec0b9032c288d811c974da217569a92f6b66e1d5a4799c5332fbed1deeafe5b2c19e8e8c0dff13bf71b14f86fc0ce75f7c0f09
+Description: GRand Unified Bootloader, version 2 (loong64 UEFI modules)
+ GRUB is a portable, powerful bootloader.  This version of GRUB is based on a
+ cleaner design than its predecessors, and provides the following new features:
+ .
+  - Scripting in grub.cfg using BASH-like syntax.
+  - Support for modern partition maps such as GPT.
+  - Modular generation of grub.cfg via update-grub.  Packages providing GRUB
+    add-ons can plug in their own script rules and trigger updates by invoking
+    update-grub.
+ .
+ This package contains GRUB modules that have been built for use on riscv64
+ systems with UEFI.  It can be installed in parallel with other flavours,
+ but will not automatically install GRUB as the active boot loader nor
+ automatically update grub.cfg on upgrade unless grub-efi-loong64 is also
+ installed.
+Efi-Vendor: debian
+Homepage: https://www.gnu.org/software/grub/
+Multi-Arch: foreign
+
+Package: grub-efi-loong64-dbg
+Priority: optional
+Section: debug
+Installed-Size: 21855
+Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
+Architecture: loong64
+Source: grub2
+Version: 2.12~rc1-11
+Depends: grub-efi-riscv64-bin (= 2.12~rc1-11)
+Filename: pool/main/g/grub2/grub-efi-loong64-dbg_2.12~rc1-11_loong64.deb
+Size: 3743728
+MD5sum: eea9423db6a3a1261883b00a20c89f0d
+SHA1: 566c853c3f66896ab67d43e75f29cd3d523e9ccb
+SHA256: 4f1f6c39e690c8631d19ece9885a488b37b3f79e4067c0067887ce8489040773
+SHA512: 0b91ba3939f205dfc07356bb86b8b679b9ae782a0245fe891166d29ce44bd5272744a973a13ea089ea6a8944437cf3264c6f1c39c17693f24c9f5dbf204a19ef
+Description: GRand Unified Bootloader, version 2 (loong64 UEFI debug files)
+ This package contains debugging files for grub-efi-loong64-bin.  You only
+ need these if you are trying to debug GRUB using its GDB stub.
+Homepage: https://www.gnu.org/software/grub/
+Multi-Arch: foreign
+
+Package: grub-theme-starfield
+Priority: optional
+Section: admin
+Installed-Size: 3084
+Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
+Architecture: loong64
+Source: grub2
+Version: 2.12~rc1-11
+Depends: grub-common (= 2.12~rc1-11)
+Filename: pool/main/g/grub2/grub-theme-starfield_2.12~rc1-11_loong64.deb
+Size: 2445800
+MD5sum: 4ee86c9caa06892fbd0c32d8e0e68116
+SHA1: bb8d7451a35f0bd837adc91b8d019ef2f4858ff7
+SHA256: 5365ab77d010d757a442e8a7afe80a4d7aef7e5fb737a59dc761e27cf776bccb
+SHA512: 2debbcefd295f850dd40b5f323668fb33f882dc2aacac2a42851dbe2d490c8a371d34275d253d2b8110253efa02f47d463190cb9abb744c197e2c7a305ca711a
+Description: GRand Unified Bootloader, version 2 (starfield theme)
+ This is the default theme for GRUB's graphical menu.
+Homepage: https://www.gnu.org/software/grub/
+Multi-Arch: foreign
+
+Package: grub2-common
+Priority: optional
+Section: admin
+Installed-Size: 1661
+Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
+Architecture: loong64
+Source: grub2
+Version: 2.12~rc1-11
+Replaces: grub, grub-cloud-amd64 (<< 0.0.4), grub-common (<< 1.99-1), grub-coreboot (<< 2.02+dfsg1-7), grub-doc (<< 0.97-32), grub-efi-amd64 (<< 2.02+dfsg1-7), grub-efi-arm (<< 2.02+dfsg1-7), grub-efi-arm64 (<< 2.02+dfsg1-7), grub-efi-ia32 (<< 2.02+dfsg1-7), grub-efi-ia64 (<< 2.02+dfsg1-7), grub-ieee1275 (<< 2.02+dfsg1-7), grub-legacy, grub-legacy-doc (<< 0.97-59), grub-pc (<< 2.02+dfsg1-7), grub-uboot (<< 2.02+dfsg1-7), grub-xen (<< 2.02+dfsg1-7), grub-yeeloong (<< 2.02+dfsg1-7)
+Depends: grub-common (= 2.12~rc1-11), dpkg (>= 1.15.4), libc6 (>= 2.37), libdevmapper1.02.1 (>= 2:1.02.36), libefiboot1 (>= 38), libefivar1 (>= 38), liblzma5 (>= 5.1.1alpha+20120614)
+Conflicts: grub-legacy
+Breaks: grub (<< 0.97-54), grub-cloud-amd64 (<< 0.0.4), grub-coreboot (<< 2.02+dfsg1-7), grub-doc (<< 0.97-32), grub-efi-amd64 (<< 2.02+dfsg1-7), grub-efi-arm (<< 2.02+dfsg1-7), grub-efi-arm64 (<< 2.02+dfsg1-7), grub-efi-ia32 (<< 2.02+dfsg1-7), grub-efi-ia64 (<< 2.02+dfsg1-7), grub-ieee1275 (<< 2.02+dfsg1-7), grub-legacy-doc (<< 0.97-59), grub-pc (<< 2.02+dfsg1-7), grub-uboot (<< 2.02+dfsg1-7), grub-xen (<< 2.02+dfsg1-7), grub-yeeloong (<< 2.02+dfsg1-7), shim (<< 0.9+1474479173.6c180c6-0ubuntu1~)
+Filename: pool/main/g/grub2/grub2-common_2.12~rc1-11_loong64.deb
+Size: 893780
+MD5sum: 56454718212611fa0bd6ed6024fa1ee0
+SHA1: 04f257dbede691b2d0c277ace97c1c6ae4868eb7
+SHA256: 1c8de5d7bca14bd2ee466ce8c0b638615ad20d72f1135651408a8a29b27a5d7b
+SHA512: b69df022b316e1134e46320fd4f1cc6dd626413be60133370ddec69ddff8f47b54be5d4fd227325380b61e49b9365e30f3d8ecf80dbdfba397799d9826720e7c
+Description: GRand Unified Bootloader (common files for version 2)
+ This package contains common files shared by the distinct flavours of GRUB.
+ The files in this package are specific to GRUB 2, and would break GRUB
+ Legacy if installed on the same system.
+Homepage: https://www.gnu.org/software/grub/
+Multi-Arch: foreign
+
+Package: grub2-common-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 1585
+Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
+Architecture: loong64
+Source: grub2
+Version: 2.12~rc1-11
+Depends: grub2-common (= 2.12~rc1-11)
+Filename: pool/main/g/grub2/grub2-common-dbgsym_2.12~rc1-11_loong64.deb
+Size: 1517376
+MD5sum: 513ea903047601dbb459de373265a3e9
+SHA1: b201b4526a71c30d7586782d00e0b6b23f2b94cf
+SHA256: 4a29ce0f436615b8c77d447e69464750dd14057b81164b682c3933e27cbaf180
+SHA512: 9ceddb0e532e0eb451a1bd19e1782ff9151f304c56bfaf4cff9cc68d5c17ead422c77cdca5b25dfc87559e909424550e5aa107e616633629f6c718c26e329e73
+Description: debug symbols for grub2-common
+Auto-Built-Package: debug-symbols
+Build-Ids: d33e071b24f44f04ff478903673cd8dc96b3879e
+
+Package: libseccomp-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 1082
+Maintainer: Kees Cook <kees@debian.org>
+Architecture: loong64
+Source: libseccomp
+Version: 2.5.4-1+loong64+1
+Depends: libseccomp2 (= 2.5.4-1+loong64+1)
+Suggests: seccomp
+Filename: pool/main/libs/libseccomp/libseccomp-dev_2.5.4-1+loong64+1_loong64.deb
+Size: 137996
+MD5sum: 71f4f2665f9ffe3e51c760340f4a4c12
+SHA1: 16060ce4a363ba0fae0357aa274c44604a587966
+SHA256: 9f2889b33fe19950253448c2a15e42fd01cfb8b6a3816c447c16fe3af75f56ce
+SHA512: de708e891374d069d9b1d69011ba276d2164789994c1e812d14d267e209648cfe61e5aeb30edf689d60b6ec4ad3830f8b6c5d412cb7259225029ccb4ee99e848
+Description: high level interface to Linux seccomp filter (development files)
+ This library provides a high level interface to constructing, analyzing
+ and installing seccomp filters via a BPF passed to the Linux Kernel's
+ prctl() syscall.
+ .
+ This package contains the development files.
+Homepage: https://github.com/seccomp/libseccomp
+Multi-Arch: same
+
+Package: libseccomp2
+Priority: optional
+Section: libs
+Installed-Size: 168
+Maintainer: Kees Cook <kees@debian.org>
+Architecture: loong64
+Source: libseccomp
+Version: 2.5.4-1+loong64+1
+Depends: libc6 (>= 2.37)
+Filename: pool/main/libs/libseccomp/libseccomp2_2.5.4-1+loong64+1_loong64.deb
+Size: 47532
+MD5sum: b7772bfc82f4b579885e56bfbc7d995a
+SHA1: 3a64d854e04b94273bc035d7ea6e98cdf0061f04
+SHA256: f8c8965108da418c3e45341d3126a7b4a46b54fa6bb0d6049fef9dc47d732a84
+SHA512: 8c9a1ad52ec3788c313583c11cf273601b3b7638b789ef990dfc2479787c8d954248e9cf948569b34c34783300092585448382d7c4fa619435feaf2f6c8ad3fa
+Description: high level interface to Linux seccomp filter
+ This library provides a high level interface to constructing, analyzing
+ and installing seccomp filters via a BPF passed to the Linux Kernel's
+ prctl() syscall.
+Homepage: https://github.com/seccomp/libseccomp
+Multi-Arch: same
+
+Package: libseccomp2-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 113
+Maintainer: Kees Cook <kees@debian.org>
+Architecture: loong64
+Source: libseccomp
+Version: 2.5.4-1+loong64+1
+Depends: libseccomp2 (= 2.5.4-1+loong64+1)
+Filename: pool/main/libs/libseccomp/libseccomp2-dbgsym_2.5.4-1+loong64+1_loong64.deb
+Size: 92300
+MD5sum: 4beae2a3ea2e335b3149ee224a302655
+SHA1: bab05f5c1a8a5c260d62dbecb10d9a58457aadf8
+SHA256: a70c2d1738163f35ceaa5f2f102e45dbccbdcaf933e7f8bc2f760630f8763ef2
+SHA512: a40d04249e37a67ab56623797c98c8ece844bf634a9011225dfec4ddff4cfa72c76501719556be2ac7a9b77c52c7a18e7987fcc89ff8539aa0cedb426372a93e
+Description: debug symbols for libseccomp2
+Auto-Built-Package: debug-symbols
+Build-Ids: 945c841dfebf325bea16fb4aa1ce5bbd2fdfc9dd
+Multi-Arch: same
+
+Package: podman
+Priority: optional
+Section: admin
+Installed-Size: 41545
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Architecture: loong64
+Source: libpod
+Version: 4.7.1+ds4-5
+Depends: conmon (>= 2.0.18~), crun | runc (>= 1.0.0~rc92~), golang-github-containers-common, libc6 (>= 2.37), libdevmapper1.02.1 (>= 2:1.02.97), libgpgme11 (>= 1.4.1), libseccomp2 (>= 2.5.0), libsqlite3-0 (>= 3.36.0), libsubid4 (>= 1:4.11.1)
+Recommends: buildah (>= 1.31), catatonit | tini | dumb-init, dbus-user-session, passt, slirp4netns (>= 0.4.1~), uidmap
+Suggests: containers-storage, docker-compose, fuse-overlayfs (>= 1.0.0~), iptables
+Breaks: buildah (<< 1.10.1-6), fuse-overlayfs (<< 0.7.1), slirp4netns (<< 0.4.1)
+Filename: pool/main/libp/libpod/podman_4.7.1+ds4-5_loong64.deb
+Size: 10296848
+MD5sum: 9d0435bb903f0784e7182c136a640bc4
+SHA1: dc2a86e9e9622ca8e62275d7895dfe45b9258a62
+SHA256: a01cfc0642cee8ae34344b2e7820005e23d4aa4a1997c3d838e11e53b6dcb90b
+SHA512: e52e57692535618ef01300454863eb48f3fbfea812dbb90f59c5388923c51531e12fadd00922dbadd0635dd4eba8569278375719fff489b8b8d0b3a48d012a4a
+Description: tool to manage containers and pods
+ Podman (the POD MANager) is a tool for managing containers and images, volumes
+ mounted into those containers, and pods made from groups of containers.
+ .
+ At a high level, the scope of Podman and libpod is the following:
+  * Support for multiple container image formats, including OCI and Docker
+    images.
+  * Full management of those images, including pulling from various sources
+    (including trust and verification), creating (built via Containerfile or
+    Dockerfile or committed from a container), and pushing to registries and
+    other storage backends.
+  * Full management of container lifecycle, including creation (both from an
+    image and from an exploded root filesystem), running, checkpointing and
+    restoring (via CRIU), and removal.
+  * Full management of container networking, using Netavark.
+  * Support for pods, groups of containers that share resources and are managed
+    together.
+  * Support for running containers and pods without root or other elevated
+    privileges.
+  * Resource isolation of containers and pods.
+  * Support for a Docker-compatible CLI interface, which can both run
+    containers locally and on remote systems.
+  * No manager daemon, for improved security and lower resource utilization at
+    idle.
+  * Support for a REST API providing both a Docker-compatible interface and an
+    improved interface exposing advanced Podman functionality.
+  * Support for running on Windows and Mac via virtual machines run by podman
+    machine.
+ .
+ Podman is a daemon-less alternative to Docker.
+Built-Using: conmon (= 2.1.6+ds1-1), containerd (= 1.6.24~ds1-1), docker-registry (= 2.8.2+ds1-1), docker.io (= 20.10.25+dfsg1-2), go-containerregistry (= 0.14.0+ds1-2), golang-1.21 (= 1.21.4-1), golang-dbus (= 5.1.0-1), golang-fsnotify (= 1.7.0-1), golang-github-acarl005-stripansi (= 0.0~git20180116.5a71ef0-3), golang-github-aead-serpent (= 0.1-2), golang-github-appc-cni (= 1.1.2-1), golang-github-blang-semver (= 4.0.0-1), golang-github-buger-goterm (= 0.0+git20181115.c206103-3), golang-github-cespare-xxhash (= 2.1.1-2), golang-github-checkpoint-restore-go-criu (= 6.3.0+ds1-2), golang-github-chzyer-readline (= 1.4.39.g2972be2-3), golang-github-cilium-ebpf (= 0.12.2-1), golang-github-container-orchestrated-devices-container-device-interface (= 0.6.1-2), golang-github-containerd-stargz-snapshotter (= 0.12.0-2), golang-github-containernetworking-plugins (= 1.1.1+ds1-3), golang-github-containers-buildah (= 1.32.0+ds1-2), golang-github-containers-common (= 0.56.0+ds1-3), golang-github-containers-image (= 5.28.0-4), golang-github-containers-libtrust (= 0.0~git20230121.c1716e8-2), golang-github-containers-luksy (= 0.0~git20231017.6a3592c+ds1-1), golang-github-containers-ocicrypt (= 1.1.7-2), golang-github-containers-psgo (= 1.7.1+ds1-1), golang-github-containers-storage (= 1.50.2+ds1-2), golang-github-coreos-bbolt (= 1.3.8-1), golang-github-coreos-go-systemd (= 22.3.2-1), golang-github-cyphar-filepath-securejoin (= 0.2.3-1), golang-github-davecgh-go-spew (= 1.1.1-3), golang-github-disiqueira-gotree (= 3.0.2-2), golang-github-docker-docker-credential-helpers (= 0.6.4+ds1-1), golang-github-docker-go-connections (= 0.4.0-4), golang-github-docker-go-units (= 0.4.0-4), golang-github-fsouza-go-dockerclient (= 1.8.1-1), golang-github-fullsailor-pkcs7 (= 0.0~git20210826.33d0574-2), golang-github-golang-protobuf-1-3 (= 1.3.5-4), golang-github-google-go-intervals (= 0.0.2-2), golang-github-google-gofuzz (= 1.2.0-1), golang-github-google-shlex (= 0.0~git20191202.e7afc7f-1), golang-github-google-uuid (= 1.3.0-1), golang-github-gorilla-handlers (= 1.5.1-3), golang-github-gorilla-mux (= 1.8.0-1), golang-github-gorilla-schema (= 1.2.0-2), golang-github-hashicorp-errwrap (= 1.1.0-1), golang-github-hashicorp-go-cleanhttp (= 0.5.2-1), golang-github-hashicorp-go-multierror (= 1.1.1-2), golang-github-hashicorp-go-retryablehttp (= 0.7.1-1), golang-github-jinzhu-copier (= 0.3.2-2), golang-github-json-iterator-go (= 1.1.12-1), golang-github-klauspost-compress (= 1.17.2+ds1-1), golang-github-klauspost-pgzip (= 1.2.6-1), golang-github-kr-fs (= 0.1.0-2), golang-github-manifoldco-promptui (= 0.9.0-1), golang-github-mattn-go-runewidth (= 0.0.15-2), golang-github-mattn-go-shellwords (= 1.0.12-1), golang-github-mattn-go-sqlite3 (= 1.14.17~ds1-2), golang-github-miekg-pkcs11 (= 1.0.3+dfsg1-2), golang-github-moby-sys (= 0.0~git20231105.a4e0878-1), golang-github-moby-term (= 0.0~git20230502.9c3c875-1), golang-github-modern-go-concurrent (= 1.0.3-1.1), golang-github-modern-go-reflect2 (= 1.0.2-2), golang-github-morikuni-aec (= 1.0.0-3), golang-github-nxadm-tail (= 1.4.5+ds1-5), golang-github-opencontainers-go-digest (= 1.0.0-2), golang-github-opencontainers-image-spec (= 1.1.0~rc4-3), golang-github-opencontainers-runtime-tools (= 0.9.0.109.ge931285-1), golang-github-opencontainers-selinux (= 1.11.0+ds1-2), golang-github-opencontainers-specs (= 1.1.0-1), golang-github-openshift-imagebuilder (= 1.2.5+ds1-3), golang-github-pkg-errors (= 0.9.1-3), golang-github-pkg-sftp (= 1.13.5-2), golang-github-pmezard-go-difflib (= 1.0.0-3), golang-github-proglottis-gpgme (= 0.1.1-2), golang-github-rivo-uniseg (= 0.4.4-1), golang-github-secure-systems-lab-go-securesystemslib (= 0.7.0-3), golang-github-sigstore-sigstore (= 1.4.0-3), golang-github-spf13-cobra (= 1.7.0-1), golang-github-spf13-pflag (= 1.0.6~git20210604-d5e0c0615ace-1), golang-github-stefanberger-go-pkcs11uri (= 0.0~git20201008.78d3cae-2), golang-github-sylabs-sif (= 2.8.3-2), golang-github-theupdateframework-go-tuf (= 0.5.2-5), golang-github-ulikunitz-xz (= 0.5.6-2), golang-github-vbatts-tar-split (= 0.11.2+ds1-1), golang-github-vbauerster-mpb (= 8.6.1-3), golang-github-vishvananda-netlink (= 1.1.0.125.gf243826-4), golang-github-vishvananda-netns (= 0.0~git20211101.5004558-1), golang-github-vividcortex-ewma (= 1.1.1-2), golang-go-patricia (= 2.3.1-1), golang-go-zfs (= 3.0.0-1), golang-go.crypto (= 1:0.14.0-1), golang-gocapability-dev (= 0.0+git20200815.42c35b4-2), golang-gogoprotobuf (= 1.3.2-3), golang-golang-x-exp (= 0.0~git20231006.7918f67-1), golang-golang-x-mod (= 0.13.0-1), golang-golang-x-net (= 1:0.17.0+dfsg-1), golang-golang-x-sync (= 0.4.0-1), golang-golang-x-sys (= 0.13.0-1), golang-golang-x-term (= 0.13.0-1), golang-golang-x-text (= 0.13.0-1), golang-google-genproto (= 0.0~git20200413.b5235f6-3), golang-google-grpc (= 1.38.0+really1.33.3-1), golang-google-protobuf (= 1.31.0-1), golang-gopkg-inf.v0 (= 0.9.1-2), golang-gopkg-square-go-jose.v2 (= 2.6.0-2), golang-gopkg-tomb.v1 (= 0.0~git20141024.0.dd63297-8), golang-gopkg-yaml.v3 (= 3.0.1-3), golang-k8s-sigs-yaml (= 1.3.0-1), golang-logrus (= 1.9.0-1), golang-toml (= 1.2.1-1), golang-yaml.v2 (= 2.4.0-4), rootlesskit (= 1.1.1-1), runc (= 1.1.10+ds1-1)
+Homepage: https://github.com/containers/podman
+
+Package: podman-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 16107
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Architecture: loong64
+Source: libpod
+Version: 4.7.1+ds4-5
+Depends: podman (= 4.7.1+ds4-5)
+Filename: pool/main/libp/libpod/podman-dbgsym_4.7.1+ds4-5_loong64.deb
+Size: 12484524
+MD5sum: 35dc39b38f0ec60d91d8699bb707ce95
+SHA1: e3f895a192997b815a2655f12b7f696f69e43022
+SHA256: 69b23ed48d5c187e6626106082fa98c16cc04f2eba65a3cc0f7bdb7b080efefd
+SHA512: d4e477fdaaecfd83bef1544a03bd78c57bcbab716efc9261d2da8cb0bf3033e352ecd55f1fa2a91a3bb39e40814d5e13e2da4b90e90fb48c18f6eba97a26718b
+Description: debug symbols for podman
+Auto-Built-Package: debug-symbols
+Build-Ids: 11295c9b08849c9f0e962ec238de6ab9747261ed 34147d68b6d47d59b983d974b472dc57539c678c 92e248cc78bc8912a8559e184c2cdc3159a478d3
+
+Package: podman-docker
+Priority: optional
+Section: admin
+Installed-Size: 249
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Architecture: loong64
+Source: libpod
+Version: 4.7.1+ds4-5
+Depends: podman
+Recommends: docker-compose
+Conflicts: docker.io
+Filename: pool/main/libp/libpod/podman-docker_4.7.1+ds4-5_loong64.deb
+Size: 23556
+MD5sum: 9d612ac3cd491121036a7b52f8ff4828
+SHA1: 40af0089a31912f9b9a35ec8a7dc72a42ce35012
+SHA256: f621e49777b6ecdd70aae6d4687efaf4eaf1fdf8c655a7175009625698385c0d
+SHA512: 621a694a88698f197d986c24ca831ead1304f12c68345b37eecdfb8915ae3732b7e1700a6423a61cd0ded0790b20f64d368c34b4452434cbc8c7607e4d60ac0d
+Description: tool to manage containers and pods (Docker CLI)
+ Podman (the POD MANager) is a tool for managing containers and images, volumes
+ mounted into those containers, and pods made from groups of containers.
+ .
+ At a high level, the scope of Podman and libpod is the following:
+  * Support for multiple container image formats, including OCI and Docker
+    images.
+  * Full management of those images, including pulling from various sources
+    (including trust and verification), creating (built via Containerfile or
+    Dockerfile or committed from a container), and pushing to registries and
+    other storage backends.
+  * Full management of container lifecycle, including creation (both from an
+    image and from an exploded root filesystem), running, checkpointing and
+    restoring (via CRIU), and removal.
+  * Full management of container networking, using Netavark.
+  * Support for pods, groups of containers that share resources and are managed
+    together.
+  * Support for running containers and pods without root or other elevated
+    privileges.
+  * Resource isolation of containers and pods.
+  * Support for a Docker-compatible CLI interface, which can both run
+    containers locally and on remote systems.
+  * No manager daemon, for improved security and lower resource utilization at
+    idle.
+  * Support for a REST API providing both a Docker-compatible interface and an
+    improved interface exposing advanced Podman functionality.
+  * Support for running on Windows and Mac via virtual machines run by podman
+    machine.
+ .
+ Podman is a daemon-less alternative to Docker.
+ .
+ This package installs a Docker-compatible CLI interface, capable of running
+ containers locally and on remote systems.
+Built-Using: conmon (= 2.1.6+ds1-1), containerd (= 1.6.24~ds1-1), docker-registry (= 2.8.2+ds1-1), docker.io (= 20.10.25+dfsg1-2), go-containerregistry (= 0.14.0+ds1-2), golang-1.21 (= 1.21.4-1), golang-dbus (= 5.1.0-1), golang-fsnotify (= 1.7.0-1), golang-github-acarl005-stripansi (= 0.0~git20180116.5a71ef0-3), golang-github-aead-serpent (= 0.1-2), golang-github-appc-cni (= 1.1.2-1), golang-github-blang-semver (= 4.0.0-1), golang-github-buger-goterm (= 0.0+git20181115.c206103-3), golang-github-cespare-xxhash (= 2.1.1-2), golang-github-checkpoint-restore-go-criu (= 6.3.0+ds1-2), golang-github-chzyer-readline (= 1.4.39.g2972be2-3), golang-github-cilium-ebpf (= 0.12.2-1), golang-github-container-orchestrated-devices-container-device-interface (= 0.6.1-2), golang-github-containerd-stargz-snapshotter (= 0.12.0-2), golang-github-containernetworking-plugins (= 1.1.1+ds1-3), golang-github-containers-buildah (= 1.32.0+ds1-2), golang-github-containers-common (= 0.56.0+ds1-3), golang-github-containers-image (= 5.28.0-4), golang-github-containers-libtrust (= 0.0~git20230121.c1716e8-2), golang-github-containers-luksy (= 0.0~git20231017.6a3592c+ds1-1), golang-github-containers-ocicrypt (= 1.1.7-2), golang-github-containers-psgo (= 1.7.1+ds1-1), golang-github-containers-storage (= 1.50.2+ds1-2), golang-github-coreos-bbolt (= 1.3.8-1), golang-github-coreos-go-systemd (= 22.3.2-1), golang-github-cyphar-filepath-securejoin (= 0.2.3-1), golang-github-davecgh-go-spew (= 1.1.1-3), golang-github-disiqueira-gotree (= 3.0.2-2), golang-github-docker-docker-credential-helpers (= 0.6.4+ds1-1), golang-github-docker-go-connections (= 0.4.0-4), golang-github-docker-go-units (= 0.4.0-4), golang-github-fsouza-go-dockerclient (= 1.8.1-1), golang-github-fullsailor-pkcs7 (= 0.0~git20210826.33d0574-2), golang-github-golang-protobuf-1-3 (= 1.3.5-4), golang-github-google-go-intervals (= 0.0.2-2), golang-github-google-gofuzz (= 1.2.0-1), golang-github-google-shlex (= 0.0~git20191202.e7afc7f-1), golang-github-google-uuid (= 1.3.0-1), golang-github-gorilla-handlers (= 1.5.1-3), golang-github-gorilla-mux (= 1.8.0-1), golang-github-gorilla-schema (= 1.2.0-2), golang-github-hashicorp-errwrap (= 1.1.0-1), golang-github-hashicorp-go-cleanhttp (= 0.5.2-1), golang-github-hashicorp-go-multierror (= 1.1.1-2), golang-github-hashicorp-go-retryablehttp (= 0.7.1-1), golang-github-jinzhu-copier (= 0.3.2-2), golang-github-json-iterator-go (= 1.1.12-1), golang-github-klauspost-compress (= 1.17.2+ds1-1), golang-github-klauspost-pgzip (= 1.2.6-1), golang-github-kr-fs (= 0.1.0-2), golang-github-manifoldco-promptui (= 0.9.0-1), golang-github-mattn-go-runewidth (= 0.0.15-2), golang-github-mattn-go-shellwords (= 1.0.12-1), golang-github-mattn-go-sqlite3 (= 1.14.17~ds1-2), golang-github-miekg-pkcs11 (= 1.0.3+dfsg1-2), golang-github-moby-sys (= 0.0~git20231105.a4e0878-1), golang-github-moby-term (= 0.0~git20230502.9c3c875-1), golang-github-modern-go-concurrent (= 1.0.3-1.1), golang-github-modern-go-reflect2 (= 1.0.2-2), golang-github-morikuni-aec (= 1.0.0-3), golang-github-nxadm-tail (= 1.4.5+ds1-5), golang-github-opencontainers-go-digest (= 1.0.0-2), golang-github-opencontainers-image-spec (= 1.1.0~rc4-3), golang-github-opencontainers-runtime-tools (= 0.9.0.109.ge931285-1), golang-github-opencontainers-selinux (= 1.11.0+ds1-2), golang-github-opencontainers-specs (= 1.1.0-1), golang-github-openshift-imagebuilder (= 1.2.5+ds1-3), golang-github-pkg-errors (= 0.9.1-3), golang-github-pkg-sftp (= 1.13.5-2), golang-github-pmezard-go-difflib (= 1.0.0-3), golang-github-proglottis-gpgme (= 0.1.1-2), golang-github-rivo-uniseg (= 0.4.4-1), golang-github-secure-systems-lab-go-securesystemslib (= 0.7.0-3), golang-github-sigstore-sigstore (= 1.4.0-3), golang-github-spf13-cobra (= 1.7.0-1), golang-github-spf13-pflag (= 1.0.6~git20210604-d5e0c0615ace-1), golang-github-stefanberger-go-pkcs11uri (= 0.0~git20201008.78d3cae-2), golang-github-sylabs-sif (= 2.8.3-2), golang-github-theupdateframework-go-tuf (= 0.5.2-5), golang-github-ulikunitz-xz (= 0.5.6-2), golang-github-vbatts-tar-split (= 0.11.2+ds1-1), golang-github-vbauerster-mpb (= 8.6.1-3), golang-github-vishvananda-netlink (= 1.1.0.125.gf243826-4), golang-github-vishvananda-netns (= 0.0~git20211101.5004558-1), golang-github-vividcortex-ewma (= 1.1.1-2), golang-go-patricia (= 2.3.1-1), golang-go-zfs (= 3.0.0-1), golang-go.crypto (= 1:0.14.0-1), golang-gocapability-dev (= 0.0+git20200815.42c35b4-2), golang-gogoprotobuf (= 1.3.2-3), golang-golang-x-exp (= 0.0~git20231006.7918f67-1), golang-golang-x-mod (= 0.13.0-1), golang-golang-x-net (= 1:0.17.0+dfsg-1), golang-golang-x-sync (= 0.4.0-1), golang-golang-x-sys (= 0.13.0-1), golang-golang-x-term (= 0.13.0-1), golang-golang-x-text (= 0.13.0-1), golang-google-genproto (= 0.0~git20200413.b5235f6-3), golang-google-grpc (= 1.38.0+really1.33.3-1), golang-google-protobuf (= 1.31.0-1), golang-gopkg-inf.v0 (= 0.9.1-2), golang-gopkg-square-go-jose.v2 (= 2.6.0-2), golang-gopkg-tomb.v1 (= 0.0~git20141024.0.dd63297-8), golang-gopkg-yaml.v3 (= 3.0.1-3), golang-k8s-sigs-yaml (= 1.3.0-1), golang-logrus (= 1.9.0-1), golang-toml (= 1.2.1-1), golang-yaml.v2 (= 2.4.0-4), rootlesskit (= 1.1.1-1), runc (= 1.1.10+ds1-1)
+Homepage: https://github.com/containers/podman
+
+Package: podman-remote
+Priority: optional
+Section: admin
+Installed-Size: 23845
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Architecture: loong64
+Source: libpod
+Version: 4.7.1+ds4-5
+Depends: libc6 (>= 2.37)
+Filename: pool/main/libp/libpod/podman-remote_4.7.1+ds4-5_loong64.deb
+Size: 5828060
+MD5sum: 4180d20a2b3834a7bcb57448ffa4d6b7
+SHA1: d01426dab0d91b9fed670a35410272b0018e2d0f
+SHA256: 2d3d9565e8cd4bca9aa5d3d19872ab2f0e3332c1537f70ce7e85c008d1fb1fec
+SHA512: 304289a8c904cd025c12ba8e1d6047682dfff8c8ecb5ae8c770349f4e8962e6e986ddb9f7e99eccfcbcdff90781a58b476a7299fd462642df3d5840661ff05cc
+Description: tool to manage containers and pods (remote CLI)
+ Podman (the POD MANager) is a tool for managing containers and images, volumes
+ mounted into those containers, and pods made from groups of containers.
+ .
+ At a high level, the scope of Podman and libpod is the following:
+  * Support for multiple container image formats, including OCI and Docker
+    images.
+  * Full management of those images, including pulling from various sources
+    (including trust and verification), creating (built via Containerfile or
+    Dockerfile or committed from a container), and pushing to registries and
+    other storage backends.
+  * Full management of container lifecycle, including creation (both from an
+    image and from an exploded root filesystem), running, checkpointing and
+    restoring (via CRIU), and removal.
+  * Full management of container networking, using Netavark.
+  * Support for pods, groups of containers that share resources and are managed
+    together.
+  * Support for running containers and pods without root or other elevated
+    privileges.
+  * Resource isolation of containers and pods.
+  * Support for a Docker-compatible CLI interface, which can both run
+    containers locally and on remote systems.
+  * No manager daemon, for improved security and lower resource utilization at
+    idle.
+  * Support for a REST API providing both a Docker-compatible interface and an
+    improved interface exposing advanced Podman functionality.
+  * Support for running on Windows and Mac via virtual machines run by podman
+    machine.
+ .
+ Podman is a daemon-less alternative to Docker.
+ .
+ This package provides a smaller executable, a local client to interact with a
+ Podman backend node through a RESTful API tunneled through an SSH connection.
+Built-Using: conmon (= 2.1.6+ds1-1), containerd (= 1.6.24~ds1-1), docker-registry (= 2.8.2+ds1-1), docker.io (= 20.10.25+dfsg1-2), go-containerregistry (= 0.14.0+ds1-2), golang-1.21 (= 1.21.4-1), golang-dbus (= 5.1.0-1), golang-fsnotify (= 1.7.0-1), golang-github-acarl005-stripansi (= 0.0~git20180116.5a71ef0-3), golang-github-aead-serpent (= 0.1-2), golang-github-appc-cni (= 1.1.2-1), golang-github-blang-semver (= 4.0.0-1), golang-github-buger-goterm (= 0.0+git20181115.c206103-3), golang-github-cespare-xxhash (= 2.1.1-2), golang-github-checkpoint-restore-go-criu (= 6.3.0+ds1-2), golang-github-chzyer-readline (= 1.4.39.g2972be2-3), golang-github-cilium-ebpf (= 0.12.2-1), golang-github-container-orchestrated-devices-container-device-interface (= 0.6.1-2), golang-github-containerd-stargz-snapshotter (= 0.12.0-2), golang-github-containernetworking-plugins (= 1.1.1+ds1-3), golang-github-containers-buildah (= 1.32.0+ds1-2), golang-github-containers-common (= 0.56.0+ds1-3), golang-github-containers-image (= 5.28.0-4), golang-github-containers-libtrust (= 0.0~git20230121.c1716e8-2), golang-github-containers-luksy (= 0.0~git20231017.6a3592c+ds1-1), golang-github-containers-ocicrypt (= 1.1.7-2), golang-github-containers-psgo (= 1.7.1+ds1-1), golang-github-containers-storage (= 1.50.2+ds1-2), golang-github-coreos-bbolt (= 1.3.8-1), golang-github-coreos-go-systemd (= 22.3.2-1), golang-github-cyphar-filepath-securejoin (= 0.2.3-1), golang-github-davecgh-go-spew (= 1.1.1-3), golang-github-disiqueira-gotree (= 3.0.2-2), golang-github-docker-docker-credential-helpers (= 0.6.4+ds1-1), golang-github-docker-go-connections (= 0.4.0-4), golang-github-docker-go-units (= 0.4.0-4), golang-github-fsouza-go-dockerclient (= 1.8.1-1), golang-github-fullsailor-pkcs7 (= 0.0~git20210826.33d0574-2), golang-github-golang-protobuf-1-3 (= 1.3.5-4), golang-github-google-go-intervals (= 0.0.2-2), golang-github-google-gofuzz (= 1.2.0-1), golang-github-google-shlex (= 0.0~git20191202.e7afc7f-1), golang-github-google-uuid (= 1.3.0-1), golang-github-gorilla-handlers (= 1.5.1-3), golang-github-gorilla-mux (= 1.8.0-1), golang-github-gorilla-schema (= 1.2.0-2), golang-github-hashicorp-errwrap (= 1.1.0-1), golang-github-hashicorp-go-cleanhttp (= 0.5.2-1), golang-github-hashicorp-go-multierror (= 1.1.1-2), golang-github-hashicorp-go-retryablehttp (= 0.7.1-1), golang-github-jinzhu-copier (= 0.3.2-2), golang-github-json-iterator-go (= 1.1.12-1), golang-github-klauspost-compress (= 1.17.2+ds1-1), golang-github-klauspost-pgzip (= 1.2.6-1), golang-github-kr-fs (= 0.1.0-2), golang-github-manifoldco-promptui (= 0.9.0-1), golang-github-mattn-go-runewidth (= 0.0.15-2), golang-github-mattn-go-shellwords (= 1.0.12-1), golang-github-mattn-go-sqlite3 (= 1.14.17~ds1-2), golang-github-miekg-pkcs11 (= 1.0.3+dfsg1-2), golang-github-moby-sys (= 0.0~git20231105.a4e0878-1), golang-github-moby-term (= 0.0~git20230502.9c3c875-1), golang-github-modern-go-concurrent (= 1.0.3-1.1), golang-github-modern-go-reflect2 (= 1.0.2-2), golang-github-morikuni-aec (= 1.0.0-3), golang-github-nxadm-tail (= 1.4.5+ds1-5), golang-github-opencontainers-go-digest (= 1.0.0-2), golang-github-opencontainers-image-spec (= 1.1.0~rc4-3), golang-github-opencontainers-runtime-tools (= 0.9.0.109.ge931285-1), golang-github-opencontainers-selinux (= 1.11.0+ds1-2), golang-github-opencontainers-specs (= 1.1.0-1), golang-github-openshift-imagebuilder (= 1.2.5+ds1-3), golang-github-pkg-errors (= 0.9.1-3), golang-github-pkg-sftp (= 1.13.5-2), golang-github-pmezard-go-difflib (= 1.0.0-3), golang-github-proglottis-gpgme (= 0.1.1-2), golang-github-rivo-uniseg (= 0.4.4-1), golang-github-secure-systems-lab-go-securesystemslib (= 0.7.0-3), golang-github-sigstore-sigstore (= 1.4.0-3), golang-github-spf13-cobra (= 1.7.0-1), golang-github-spf13-pflag (= 1.0.6~git20210604-d5e0c0615ace-1), golang-github-stefanberger-go-pkcs11uri (= 0.0~git20201008.78d3cae-2), golang-github-sylabs-sif (= 2.8.3-2), golang-github-theupdateframework-go-tuf (= 0.5.2-5), golang-github-ulikunitz-xz (= 0.5.6-2), golang-github-vbatts-tar-split (= 0.11.2+ds1-1), golang-github-vbauerster-mpb (= 8.6.1-3), golang-github-vishvananda-netlink (= 1.1.0.125.gf243826-4), golang-github-vishvananda-netns (= 0.0~git20211101.5004558-1), golang-github-vividcortex-ewma (= 1.1.1-2), golang-go-patricia (= 2.3.1-1), golang-go-zfs (= 3.0.0-1), golang-go.crypto (= 1:0.14.0-1), golang-gocapability-dev (= 0.0+git20200815.42c35b4-2), golang-gogoprotobuf (= 1.3.2-3), golang-golang-x-exp (= 0.0~git20231006.7918f67-1), golang-golang-x-mod (= 0.13.0-1), golang-golang-x-net (= 1:0.17.0+dfsg-1), golang-golang-x-sync (= 0.4.0-1), golang-golang-x-sys (= 0.13.0-1), golang-golang-x-term (= 0.13.0-1), golang-golang-x-text (= 0.13.0-1), golang-google-genproto (= 0.0~git20200413.b5235f6-3), golang-google-grpc (= 1.38.0+really1.33.3-1), golang-google-protobuf (= 1.31.0-1), golang-gopkg-inf.v0 (= 0.9.1-2), golang-gopkg-square-go-jose.v2 (= 2.6.0-2), golang-gopkg-tomb.v1 (= 0.0~git20141024.0.dd63297-8), golang-gopkg-yaml.v3 (= 3.0.1-3), golang-k8s-sigs-yaml (= 1.3.0-1), golang-logrus (= 1.9.0-1), golang-toml (= 1.2.1-1), golang-yaml.v2 (= 2.4.0-4), rootlesskit (= 1.1.1-1), runc (= 1.1.10+ds1-1)
+Homepage: https://github.com/containers/podman
+
+Package: podman-remote-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 9444
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Architecture: loong64
+Source: libpod
+Version: 4.7.1+ds4-5
+Depends: podman-remote (= 4.7.1+ds4-5)
+Filename: pool/main/libp/libpod/podman-remote-dbgsym_4.7.1+ds4-5_loong64.deb
+Size: 7220628
+MD5sum: f940866737fb28c2c32414dbcf3f1075
+SHA1: 5f35187a830693e7a5321d955d92b9b634fb8ff4
+SHA256: 6d90422b385e0630ae5faefe4fbec3da509eeb8cccc980f8b7a775e3125687e6
+SHA512: a21c35646197550fc03d7a69dc52a499a5ab42087bbd293eccdc8f408efc9bf6d85545998e5cb9d5bcaf294b347f98df9f19bf5466831ccdb7f07cbbc344ae24
+Description: debug symbols for podman-remote
+Auto-Built-Package: debug-symbols
+Build-Ids: ea37e997b7cb20af6a3f84623aad23e76578e234
+
+Package: seccomp
+Priority: optional
+Section: utils
+Installed-Size: 37
+Maintainer: Kees Cook <kees@debian.org>
+Architecture: loong64
+Source: libseccomp
+Version: 2.5.4-1+loong64+1
+Depends: libc6 (>= 2.37), libseccomp2 (>= 2.2.1)
+Suggests: libseccomp-dev
+Filename: pool/main/libs/libseccomp/seccomp_2.5.4-1+loong64+1_loong64.deb
+Size: 10656
+MD5sum: f1263ada4eec98bf3bab31c152c97087
+SHA1: 6a35b559c1ea0cae2695fbe2d1fad6c0418b1c2e
+SHA256: 190921b84147309b9618e67cd7c13c1badc963192b8678707e76c52c50c327b9
+SHA512: ba442db66f4626015e8e222bce6ce1666d10f4e84056d54289b63a97a6d0fff79ebac3816c07a28f721d0c0b1f789ad5c1b130cc87c26f7206e3c665b7352339
+Description: helper tools for high level interface to Linux seccomp filter
+ Provides helper tools for interacting with libseccomp. Currently, only
+ a single tool exists, providing a way to easily enumerate syscalls across
+ the supported architectures.
+Homepage: https://github.com/seccomp/libseccomp
+
+Package: seccomp-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 19
+Maintainer: Kees Cook <kees@debian.org>
+Architecture: loong64
+Source: libseccomp
+Version: 2.5.4-1+loong64+1
+Depends: seccomp (= 2.5.4-1+loong64+1)
+Filename: pool/main/libs/libseccomp/seccomp-dbgsym_2.5.4-1+loong64+1_loong64.deb
+Size: 5364
+MD5sum: 1ee1b7ce5b185f7833a5af542f6db1d4
+SHA1: e662e19c86f7fe37da241aad87b0b8c117e032a3
+SHA256: 5c20494be9848cbc181fd1bb463c01f480974977f5273620d481cc98b6728db5
+SHA512: e73e1fc0648ba9feb4cb8998442e75d45f033408b96a0dea98ecf7b9e7dcb4ce8cb1d5d0effd73486268061cda072728d5a03e0485485ed265fcf62669757520
+Description: debug symbols for seccomp
+Auto-Built-Package: debug-symbols
+Build-Ids: 261ebff6419b5b056f48c31ae59eae6356d4f9ca
+

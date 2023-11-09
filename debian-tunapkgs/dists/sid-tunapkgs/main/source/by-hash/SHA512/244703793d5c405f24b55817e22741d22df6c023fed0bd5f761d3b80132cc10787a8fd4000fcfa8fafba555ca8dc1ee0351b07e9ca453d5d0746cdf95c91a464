@@ -1,0 +1,12 @@
+Origin: debian-tunapkgs sid-tunapkgs
+Label: debian-tunapkgs sid-tunapkgs
+Archive: sid-tunapkgs
+Architecture: source
+Component: main
+Acquire-By-Hash: yes
+Origin: debian-tunapkgs sid-tunapkgs
+Label: debian-tunapkgs sid-tunapkgs
+Archive: sid-tunapkgs
+Architecture: source
+Component: main
+Acquire-By-Hash: yes

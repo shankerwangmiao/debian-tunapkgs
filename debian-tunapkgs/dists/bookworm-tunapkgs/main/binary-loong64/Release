@@ -1,0 +1,6 @@
+Origin: debian-tunapkgs bookworm-tunapkgs
+Label: debian-tunapkgs bookworm-tunapkgs
+Archive: bookworm-tunapkgs
+Architecture: loong64
+Component: main
+Acquire-By-Hash: yes

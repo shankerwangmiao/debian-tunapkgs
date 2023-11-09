@@ -1,0 +1,939 @@
+Package: binutils-for-host
+Priority: optional
+Section: devel
+Installed-Size: 6
+Maintainer: Matthias Klose <doko@debian.org>
+Architecture: loong64
+Source: binutils
+Version: 2.40-2
+Depends: binutils-loongarch64-linux-gnu:any (>= 2.30-2), binutils-common (= 2.40-2)
+Filename: pool/main/b/binutils/binutils-for-host_2.40-2_loong64.deb
+Size: 1108
+MD5sum: e428e7e7caa8e9e45a4c426b5897ac6d
+SHA1: 0d330b6575ffe0dd82e21830359ddb0063285047
+SHA256: 14a8e0ec6ae842c147b08c4f505198cbb2321d2791e11ef09184c213b5c95739
+SHA512: de2629e8453e972c2cfe4ae73f8f19811117781467cdae54147740782b5d6ad7bd8b1a4d03bd9a6ad5971c823bc356668e455e15ed8f8e4d58ec7c0356901f34
+Description: GNU assembler, linker and binary utilities for the host architecture
+ The programs in this package are used to assemble, link and manipulate
+ binary and object files for the architecture of this package.  They may be
+ used in conjunction with a matching compiler and various libraries to build
+ programs. When using binutils through this metapackage, all tools must be
+ used with an architecture prefix.
+Homepage: https://www.gnu.org/software/binutils/
+Multi-Arch: same
+
+Package: bird2-doc
+Priority: optional
+Section: doc
+Installed-Size: 1832
+Maintainer: Jakub Ružička <jakub.ruzicka@nic.cz>
+Architecture: all
+Source: bird2
+Version: 2.0.12-7+shanker+p1
+Filename: pool/main/b/bird2/bird2-doc_2.0.12-7+shanker+p1_all.deb
+Size: 1388668
+MD5sum: 3c76bf645360d080203b9a36e1bfc1f5
+SHA1: 6bf45fd0bcdf4b43a8437973196412a6501a1c98
+SHA256: a1089e285db1bcc826c52bfe4fba14bf34c39c439e3405f3d131f77aba3021a8
+SHA512: d45e693860568c01428b2bad18a780ba8b0d74f166c8e897b9d5fc86e7aeb2267c5e09b8ba010a832060411eaae5363016d2838e3b459d947a4d7b239cd5f438
+Description: Internet Routing Daemon - documentation
+ BIRD is an Internet routing daemon with full support for all the major
+ routing protocols. It allows redistribution between protocols with a
+ powerful route filtering syntax and an easy-to-use configuration
+ interface.
+ .
+ This package provides the user and developer documentation.
+Homepage: https://bird.network.cz/
+
+Package: bird2-doc
+Priority: optional
+Section: doc
+Installed-Size: 1832
+Maintainer: Jakub Ružička <jakub.ruzicka@nic.cz>
+Architecture: all
+Source: bird2
+Version: 2.0.12-5+shanker+p1
+Filename: pool/main/b/bird2/bird2-doc_2.0.12-5+shanker+p1_all.deb
+Size: 1388608
+MD5sum: f05efae7d54986ec2731d69c6f990ddd
+SHA1: ea737ca683b8e0a9c8899cc43de5589600a0e266
+SHA256: 2c0ba63a9c892987eef6ccc21883e3f59006059c3bc5852d405d9691b549a894
+SHA512: 853d75a513a71c19e950d5c19200d0b8521b32d5841527b39ffcbe67957e51256db624c9249a534baf433b0ca1e83b14ee98828a95a60f9a53f3de1e115ca82d
+Description: Internet Routing Daemon - documentation
+ BIRD is an Internet routing daemon with full support for all the major
+ routing protocols. It allows redistribution between protocols with a
+ powerful route filtering syntax and an easy-to-use configuration
+ interface.
+ .
+ This package provides the user and developer documentation.
+Homepage: https://bird.network.cz/
+
+Package: bpftool
+Priority: optional
+Section: devel
+Installed-Size: 1272
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: loong64
+Source: linux (6.1.55-1)
+Version: 7.1.0+6.1.55-1
+Depends: libc6 (>= 2.37), libcap2 (>= 1:2.10), libelf1 (>= 0.144), zlib1g (>= 1:1.2.3.3)
+Filename: pool/main/l/linux/bpftool_7.1.0+6.1.55-1_loong64.deb
+Size: 916668
+MD5sum: b16287e22f592e07bac18e6d5b229a6e
+SHA1: 865eb3ed95fcf1927a3cab6409188551aa18421b
+SHA256: 20e0e3e69dfa5e2d569d27951f73956c83ee5b0d6c3404e465d9f279b650438c
+SHA512: 4178eecf0806234932b226516decb14f4c9e583ecb9aa4044076cdde311eb855d856d4e856bc9d2d9fe042bbb3b122e16aab6902565b6ba3b0464dad4ddd808e
+Description: Inspection and simple manipulation of BPF programs and maps
+ The bpftool command allows for inspection and simple modification of
+ Berkeley Packet Filter (BPF) objects on the system.
+Homepage: https://www.kernel.org/
+
+Package: bpftool-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 813
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: loong64
+Source: linux (6.1.55-1)
+Version: 7.1.0+6.1.55-1
+Depends: bpftool (= 7.1.0+6.1.55-1)
+Filename: pool/main/l/linux/bpftool-dbgsym_7.1.0+6.1.55-1_loong64.deb
+Size: 781008
+MD5sum: 3e836a0742f961737aef0ddf3ca1eb64
+SHA1: bec59c3d2c2e5e0f736e11edfe4129cdc4e540e8
+SHA256: 192334e30d7cc02905baee10846908fecdf70020cd51173cc124f62059b04d4b
+SHA512: 35160109a88a8358d25694b52c30bc57b0659b52b6d0f4a454e64f3dd4eccca38a0ac04492c4a13bd608458d5e2bf6c7a9f6dbc5e973de9191172b8b808fbbfa
+Description: debug symbols for bpftool
+Auto-Built-Package: debug-symbols
+Build-Ids: 24af97a687dcd46daef3dba76339c45c13cad756
+
+Package: gcc-12-cross-base
+Priority: optional
+Section: devel
+Installed-Size: 93
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: all
+Source: gcc-12-cross-ports (12)
+Version: 12.2.0-14cross1
+Filename: pool/main/g/gcc-12-cross-ports/gcc-12-cross-base_12.2.0-14cross1_all.deb
+Size: 33240
+MD5sum: 628b0c06352be3cb9ebe2df5dd1f0cb6
+SHA1: 9a1410d42dc86172eec60907795da2663bc2bbda
+SHA256: 756e8d3db18a063eb833d7a48d363d8682dd5b37fb7ef3fd46a3e0c975e681f4
+SHA512: 6fe7abd72689ca9246e43d99a5ef7b8f5525f83ddcd39b06fd5a71672f2ea5483a43854dca29fb4afc67924ff342d6e2df25f33034cdbb65135bdf6c44e9c9c5
+Description: GCC, the GNU Compiler Collection (library base package)
+ This empty package contains changelog and copyright files common to
+ all libraries contained in the GNU Compiler Collection (GCC).
+Built-Using: gcc-12 (= 12.2.0-14)
+Homepage: http://gcc.gnu.org/
+
+Package: hinic-dkms
+Priority: extra
+Section: kernel
+Installed-Size: 1304
+Maintainer: Miao Wang <shankerwangmiao@gmail.com>
+Architecture: all
+Source: hinic
+Version: 0+git20230415+5.10.0-136.28.0-1
+Depends: dkms (>= 2.1.0.0)
+Filename: pool/main/h/hinic/hinic-dkms_0+git20230415+5.10.0-136.28.0-1_all.deb
+Size: 198608
+MD5sum: d5f4d22bdceb7dc5a84b7e83a8a9fcdd
+SHA1: a236a37da9dd672e62e6cf900d0079fe624a0809
+SHA256: 198e26110e53db552c18a696a8586532a893db4c02b7bd0d33a6d1e3171a9083
+SHA512: 24237cda2c1eb7f27e003cfe85376f9d70567237f9c1248a57a0cd445b1fc2910dfbf704cb185d68d4f171e6ea548b089d52d99ebe44596ea9e05a7333eca0a9
+Description: Huawei HiNIC PCI Express Linux driver
+ Huawei HiNIC PCI Express Linux driver
+Homepage: https://gitee.com/openeuler/kernel/tree/OLK-5.10/drivers/net/ethernet/huawei/hinic
+
+Package: libatomic1-loong64-cross
+Priority: optional
+Section: devel
+Installed-Size: 44
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: all
+Source: gcc-12-cross-ports (12)
+Version: 12.2.0-14cross1
+Depends: gcc-12-cross-base (>= 12.2.0-14), libc6-loong64-cross (>= 2.36)
+Filename: pool/main/g/gcc-12-cross-ports/libatomic1-loong64-cross_12.2.0-14cross1_all.deb
+Size: 8596
+MD5sum: 30d8435773c2350c3e6d97cb331acbec
+SHA1: 011df2f97f0a1275bfb9e49b72317f81be07fe2c
+SHA256: 030f37ffeeda96d5499f9a902d3c9211357b19fc797230d2bc5659561ac8b53d
+SHA512: e550f95a92216cbb2fee7ba9e9e70040ca392b565a967a671253ad46024929db082ef94afd5c975737dacc7047ab959f81064a45b017f0272fbd81473ded11f3
+Description: support library providing __atomic built-in functions
+ library providing __atomic built-in functions. When an atomic call cannot
+ be turned into lock-free instructions, GCC will make calls into this library.
+Built-Using: gcc-12 (= 12.2.0-14)
+Homepage: http://gcc.gnu.org/
+
+Package: libc6-dev-loong64-cross
+Priority: optional
+Section: libdevel
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Architecture: all
+Source: cross-toolchain-base-ports (62)
+Version: 2.36-9+deb12u3cross1
+Replaces: libc6-loong64-cross (<= 2.32-1)
+Provides: libc-dev-loong64-cross (= 2.36-9+deb12u3), libc6-dev-loong64-dcv1
+Depends: libc6-loong64-cross (= 2.36-9+deb12u3cross1), linux-libc-dev-loong64-cross
+Conflicts: libc0.1-dev-loong64-cross, libc0.3-dev-loong64-cross, libc6.1-dev-loong64-cross
+Filename: pool/main/c/cross-toolchain-base-ports/libc6-dev-loong64-cross_2.36-9+deb12u3cross1_all.deb
+Size: 1431864
+MD5sum: cdd89a73c8a562388c0b0a94ca24b53f
+SHA1: 1e31ce29762282e82f930dbd07c97274a53d9a3b
+SHA256: 1d54b855903a201f0ea11907e8b3eb315089fb3102cee131ce139d9fe37148a4
+SHA512: 411eee5634f869cba19eaa55dffb5e984472a730b081a85347a9e75bf0f544ca0b0740c30284233378f0262f2bc31a9474b7f850c0e1dbc5626fa0a1fa0244e0
+Description: GNU C Library: Development Libraries and Header Files (for cross-compiling)
+ This package was generated by dpkg-cross for cross compiling.
+ .
+ Contains the symlinks, headers, and object files needed to compile
+ and link programs which use the standard C library.
+Built-Using: binutils (= 2.40-2), linux (= 6.1.55-1), gcc-12 (= 12.2.0-14), glibc (= 2.36-9+deb12u3)
+Multi-Arch: foreign
+
+Package: libc6-loong64-cross
+Priority: optional
+Section: libs
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Architecture: all
+Source: cross-toolchain-base-ports (62)
+Version: 2.36-9+deb12u3cross1
+Provides: libc6-loong64-dcv1
+Filename: pool/main/c/cross-toolchain-base-ports/libc6-loong64-cross_2.36-9+deb12u3cross1_all.deb
+Size: 953780
+MD5sum: dd7965fdd34460116bbea91e917193a2
+SHA1: b42e1653ec18dc65721c5f5ad21e3ca878eea98b
+SHA256: 9bc923c201bfba9fd2277be584742bfd1c0e09d1658a2ca90a2ff5dec85cb8e0
+SHA512: 6cb7b5ced3708354d5727f2a765fc093e3ce8b3d7c351dfc9204ff291fab86995c499f3912110e02e7efea96fd54d8ecad21126657e9a5ae285a84195856182f
+Description: GNU C Library: Shared libraries (for cross-compiling)
+ This package was generated by dpkg-cross for cross compiling.
+ .
+ Contains the standard libraries that are used by nearly all programs on
+ the system. This package includes shared versions of the standard C library
+ and the standard math library, as well as many others.
+Built-Using: binutils (= 2.40-2), linux (= 6.1.55-1), gcc-12 (= 12.2.0-14), glibc (= 2.36-9+deb12u3)
+Multi-Arch: foreign
+
+Package: libcpupower-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 719
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: loong64
+Source: linux
+Version: 6.1.55-1
+Replaces: libcpufreq-dev
+Provides: libcpufreq-dev
+Depends: libcpupower1 (= 6.1.55-1)
+Conflicts: libcpufreq-dev
+Filename: pool/main/l/linux/libcpupower-dev_6.1.55-1_loong64.deb
+Size: 723292
+MD5sum: 4f4ade4cf502e48420609f305c60b01a
+SHA1: b2a693daf93f3af699ea457ff9179ab932b2b726
+SHA256: db2527651e9d60123d272f0fa183456ac6381689d405ce7f4428fb07fe89ce58
+SHA512: c01dc5a81c5d8b85826df086937d5a25ebef741b987d30cf13103fec8542f9c4dfabaad68238e68633af7e2bf39c0d004bbabb91c7b2d6ac4df9ba25c1c4be98
+Description: CPU frequency and voltage scaling tools for Linux (development files)
+ libcpupower is a library for inspecting and controlling cpufreq and
+ cpuidle tunables.
+ .
+ This package is needed to compile programs against libcpupower.
+Homepage: https://www.kernel.org/
+
+Package: libcpupower1
+Priority: optional
+Section: libs
+Installed-Size: 753
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: loong64
+Source: linux
+Version: 6.1.55-1
+Depends: libc6 (>= 2.37)
+Filename: pool/main/l/linux/libcpupower1_6.1.55-1_loong64.deb
+Size: 730084
+MD5sum: 906681cab4763671407a11e6e4d4ef0e
+SHA1: d835e0bf4f18567c9f72d3bf67dd3ad4365d5da8
+SHA256: 457bbea7ac4674bea18e693d118495c101a84df26e7dfd59928c9bd37c4a41de
+SHA512: d94da21234c381ff5b09047a0bc0f8b54d7b66354e5d08508ac399936924bcb06ea3887fe53726d87c297da8086660a5df2b87725266dcd84ffb986affc49d96
+Description: CPU frequency and voltage scaling tools for Linux (libraries)
+ libcpupower is a library for inspecting and controlling cpufreq and
+ cpuidle tunables.
+ .
+ This package contains the shared library.
+Homepage: https://www.kernel.org/
+
+Package: libcpupower1-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 40
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: loong64
+Source: linux
+Version: 6.1.55-1
+Depends: libcpupower1 (= 6.1.55-1)
+Filename: pool/main/l/linux/libcpupower1-dbgsym_6.1.55-1_loong64.deb
+Size: 24676
+MD5sum: aaa1d311130ed4116d32fbe57918b9c0
+SHA1: 01ff3499eb9671fe1a9e843fadf6dc9144b3f018
+SHA256: 875411b5036f9c112dde2ace7780de08e9631ac1d072c60599d97328900ae95f
+SHA512: e2f9fa1c12471811ca6bf0c7b9e8b0d6c28af72e4c296364783586821983eea131dfeaa3aa2749713f5228c349a39f440b254de5ef934c3059ddc7d96a832dc7
+Description: debug symbols for libcpupower1
+Auto-Built-Package: debug-symbols
+Build-Ids: bc369a011d607eebcc2ad9b1235a1a722e92f695
+
+Package: libgcc-12-dev-loong64-cross
+Priority: optional
+Section: libdevel
+Installed-Size: 2979
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: all
+Source: gcc-12-cross-ports (12)
+Version: 12.2.0-14cross1
+Replaces: libtsan2-loong64-cross (<< 12-20211113-2~)
+Depends: gcc-12-cross-base (>= 12.2.0-14), libgcc-s1-loong64-cross (>= 12.2.0-14cross1), libgomp1-loong64-cross (>= 12.2.0-14cross1), libatomic1-loong64-cross (>= 12.2.0-14cross1)
+Recommends: libc6-dev-loong64-cross (>= 2.23-1~)
+Breaks: libtsan2-loong64-cross (<< 12-20211113-2~)
+Filename: pool/main/g/gcc-12-cross-ports/libgcc-12-dev-loong64-cross_12.2.0-14cross1_all.deb
+Size: 275668
+MD5sum: b94aa9d80b36d19c3a26e5a73600dac8
+SHA1: f3fbfeabd95cbb6fe0b0c586b1b26293af2926ac
+SHA256: c2396ee8be173aaabfcd412c47ed9592b365dd8d0a13d637144d7c6e33b972b1
+SHA512: 3ea46354c83aed3d4753753fa8a1346ecddba1161d89fa54dba0b89c32d368622b97a86529ba78bbe2e1783afa6fc03f69d5ecc53fd8d8f433d09cc44385c150
+Description: GCC support library (development files)
+ This package contains the headers and static library files necessary for
+ building C programs which use libgcc, libgomp, libquadmath, libssp or libitm.
+Built-Using: gcc-12 (= 12.2.0-14)
+Homepage: http://gcc.gnu.org/
+
+Package: libgcc-s1-loong64-cross
+Priority: optional
+Section: devel
+Installed-Size: 367
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: all
+Source: gcc-12-cross-ports (12)
+Version: 12.2.0-14cross1
+Replaces: libgcc1-loong64-cross (<< 1:10)
+Provides: libgcc-s1-loong64-dcv1, libgcc1-loong64-cross (= 1:12.2.0-14)
+Depends: gcc-12-cross-base (>= 12.2.0-14), libc6-loong64-cross (>= 2.36)
+Breaks: libgcc1-loong64-cross (<< 1:10)
+Filename: pool/main/g/gcc-12-cross-ports/libgcc-s1-loong64-cross_12.2.0-14cross1_all.deb
+Size: 85108
+MD5sum: 5155ae4b2df0548593a34021fb9c5afd
+SHA1: 4f761dfb0d6880529b42073b376df43aabbbb961
+SHA256: dccffd2a7b1f817d2247b432b06fd4d7f86ff8c6f30b58a149ec81f466afcedb
+SHA512: 570408e524ca10481b8be32e86bccc6aa74170aec4f481a58d79164b2abcfe70e67ae03ae0d1fc2ba5a6f4441604a1c96d0606fd953d448b95e98383933a47c3
+Description: GCC support library (loong64)
+ Shared version of the support library, a library of internal subroutines
+ that GCC uses to overcome shortcomings of particular machines, or
+ special needs for some languages.
+ .
+ This package contains files for loong64 architecture, for use in cross-compile
+ environment.
+Built-Using: gcc-12 (= 12.2.0-14)
+Homepage: http://gcc.gnu.org/
+
+Package: libgfortran-12-dev-loong64-cross
+Priority: optional
+Section: devel
+Installed-Size: 3350
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: all
+Source: gcc-12-cross-ports (12)
+Version: 12.2.0-14cross1
+Depends: gcc-12-cross-base (>= 12.2.0-14), libgcc-12-dev-loong64-cross (= 12.2.0-14cross1), libgfortran5-loong64-cross (>= 12.2.0-14cross1)
+Filename: pool/main/g/gcc-12-cross-ports/libgfortran-12-dev-loong64-cross_12.2.0-14cross1_all.deb
+Size: 378776
+MD5sum: 3a36d5a408c357cac5befa480667cf85
+SHA1: 61d16d49900e0a2f3469867f71004b0471e3c198
+SHA256: 62e095fb775ba3c1a65d134ccb7ada893edbfc4f1d0f4aee3ee2ab99ea5e2d94
+SHA512: 540533bc66695ec5b490315d3f0f5b12a13c07227fb01a486ded771fa8d864137a18402c985c1602c54f967eeb8a72d688a80d648614fb801f2a44f9bcd5a81e
+Description: Runtime library for GNU Fortran applications (development files)
+ This package contains the headers and static library files needed to build
+ GNU Fortran applications.
+Built-Using: gcc-12 (= 12.2.0-14)
+Homepage: http://gcc.gnu.org/
+
+Package: libgfortran5-loong64-cross
+Priority: optional
+Section: devel
+Installed-Size: 1441
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: all
+Source: gcc-12-cross-ports (12)
+Version: 12.2.0-14cross1
+Depends: gcc-12-cross-base (>= 12.2.0-14), libc6-loong64-cross (>= 2.36), libgcc-s1-loong64-cross (>= 12.2.0-14cross1)
+Filename: pool/main/g/gcc-12-cross-ports/libgfortran5-loong64-cross_12.2.0-14cross1_all.deb
+Size: 331868
+MD5sum: c7e49240d328fd79135378c0a1236c9c
+SHA1: 91cd3f23003c26fd26fe205d7cbcd886d2e76ece
+SHA256: 2cfd603a8d74e684c60280cd73994fa6dd0becfe9634ea156d8f5ae4e569c674
+SHA512: cd0510bb2565ec2c3e52627ff4596b1d71673fc2305607a2bf177fc17b21d38b0c834fc87e90de10da943939089546db7af89ed6f82b817e20e33e7c63b9964d
+Description: Runtime library for GNU Fortran applications
+ Library needed for GNU Fortran applications linked against the
+ shared library.
+Built-Using: gcc-12 (= 12.2.0-14)
+Homepage: http://gcc.gnu.org/
+
+Package: libgomp1-loong64-cross
+Priority: optional
+Section: devel
+Installed-Size: 302
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: all
+Source: gcc-12-cross-ports (12)
+Version: 12.2.0-14cross1
+Depends: gcc-12-cross-base (>= 12.2.0-14), libc6-loong64-cross (>= 2.36)
+Filename: pool/main/g/gcc-12-cross-ports/libgomp1-loong64-cross_12.2.0-14cross1_all.deb
+Size: 104212
+MD5sum: 1d4d82a839f610d8b56f4be7655ccff3
+SHA1: d74b0ee031c714703ccde0b926a4f13859a62595
+SHA256: 683ff6cb8e04b205731b3a208a64f9659690b6022e6b19de6fce347cd9671edd
+SHA512: da1a33234a74efd6dd13ab3e47052a7c53fa81688cfbed0a290bcda06c73a8efeec61a847ce8e6b3153fddfee36134a355a50fc5dd45136f3be6b34adaab1660
+Description: GCC OpenMP (GOMP) support library
+ GOMP is an implementation of OpenMP for the C, C++, and Fortran compilers
+ in the GNU Compiler Collection.
+Built-Using: gcc-12 (= 12.2.0-14)
+Homepage: http://gcc.gnu.org/
+
+Package: libobjc-12-dev-loong64-cross
+Priority: optional
+Section: libdevel
+Installed-Size: 731
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: all
+Source: gcc-12-cross-ports (12)
+Version: 12.2.0-14cross1
+Depends: gcc-12-cross-base (>= 12.2.0-14), libgcc-12-dev-loong64-cross (= 12.2.0-14cross1), libobjc4-loong64-cross (>= 12.2.0-14cross1)
+Filename: pool/main/g/gcc-12-cross-ports/libobjc-12-dev-loong64-cross_12.2.0-14cross1_all.deb
+Size: 155088
+MD5sum: 3c10cd1cbc1d8139e0dd82822c325d42
+SHA1: 9d0de03814717df752cf371f2b211f822c9be063
+SHA256: 6eb73876a402631d4abd3031278bc036c0d5f040ce437766c6652f278746d117
+SHA512: adf33ed69d80e84e2459e43d771900c40443ef11f6947175ba7a3b869cf215e03ac79283ea57412f16f544e61df63f77710e9f78636d2abce8f72b2331a9b083
+Description: Runtime library for GNU Objective-C applications (development files)
+ This package contains the headers and static library files needed to build
+ GNU ObjC applications.
+Built-Using: gcc-12 (= 12.2.0-14)
+Homepage: http://gcc.gnu.org/
+
+Package: libobjc4-loong64-cross
+Priority: optional
+Section: devel
+Installed-Size: 119
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: all
+Source: gcc-12-cross-ports (12)
+Version: 12.2.0-14cross1
+Depends: gcc-12-cross-base (>= 12.2.0-14), libc6-loong64-cross (>= 2.36), libgcc-s1-loong64-cross (>= 3.0)
+Filename: pool/main/g/gcc-12-cross-ports/libobjc4-loong64-cross_12.2.0-14cross1_all.deb
+Size: 32056
+MD5sum: 7435b7f7da9bbe55e56fd5b15c8ed580
+SHA1: ec52a4fa074954e1212dd806248614d2d7d4343d
+SHA256: 8ac25f98607abf7d63145427fd3cbf4f7793ca372371195c8bc0ae4615e22573
+SHA512: f9d85000734fdaadc3aa653ba36c6f919081349bda3ea77e7936e3f18f66defb95b09a016f1226cec64f526f7386c4797dc372332277fa4903ccd2862e977d63
+Description: Runtime library for GNU Objective-C applications
+ Library needed for GNU ObjC applications linked against the shared library.
+Built-Using: gcc-12 (= 12.2.0-14)
+Homepage: http://gcc.gnu.org/
+
+Package: libstdc++-12-dev-loong64-cross
+Priority: optional
+Section: devel
+Installed-Size: 18894
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: all
+Source: gcc-12-cross-ports (12)
+Version: 12.2.0-14cross1
+Provides: libstdc++-dev-loong64-cross, libstdc++-dev-loong64-dcv1
+Depends: gcc-12-cross-base (>= 12.2.0-14), libgcc-12-dev-loong64-cross (= 12.2.0-14cross1), libstdc++6-loong64-cross (>= 12.2.0-14cross1), libc6-dev-loong64-cross (>= 2.23-1~)
+Filename: pool/main/g/gcc-12-cross-ports/libstdc++-12-dev-loong64-cross_12.2.0-14cross1_all.deb
+Size: 1976308
+MD5sum: 3f1f3dcc82c9422ef8a6538e9bfc5a37
+SHA1: 595ab6911ad448b3efb6aedaae8fd6665806aca6
+SHA256: 9e905f615545fe39ac0f3d840c8d4f6ed1dc5c8b0dbe61d403237a7865e711e8
+SHA512: 5fcd64ef296dc39773530a4dc0114127b820a3b2068d6702861fef7bc738976a73d27bd3cfbab525e4d0a681a4c8cdd4f15569844abc5558c369bee8910005de
+Description: GNU Standard C++ Library v3 (development files) (loong64)
+ This package contains the headers and static library files necessary for
+ building C++ programs which use libstdc++.
+ .
+ libstdc++-v3 is a complete rewrite from the previous libstdc++-v2, which
+ was included up to g++-2.95. The first version of libstdc++-v3 appeared
+ in g++-3.0.
+ .
+ This package contains files for loong64 architecture, for use in cross-compile
+ environment.
+Built-Using: gcc-12 (= 12.2.0-14)
+Homepage: http://gcc.gnu.org/
+
+Package: libstdc++-12-pic-loong64-cross
+Priority: optional
+Section: devel
+Installed-Size: 5909
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: all
+Source: gcc-12-cross-ports (12)
+Version: 12.2.0-14cross1
+Provides: libstdc++-pic-loong64-dcv1
+Depends: gcc-12-cross-base (>= 12.2.0-14), libstdc++6-loong64-cross (>= 12.2.0-14cross1), libstdc++-12-dev-loong64-cross (= 12.2.0-14cross1)
+Filename: pool/main/g/gcc-12-cross-ports/libstdc++-12-pic-loong64-cross_12.2.0-14cross1_all.deb
+Size: 678792
+MD5sum: 5f461b567d31267a5d0ec6be03528388
+SHA1: 8623d8bba617a504b53247d34ad55505b89f7c1e
+SHA256: 2a3e806bc17eee2e3b7963ba045cfbf5193fbf7872132901f3a83578951734e1
+SHA512: ad39ad2f63bc153117f71123c5a1dd1deb1a1699ccc60da13f9d13f33fddfedfe6049860ed0b9cba745da890b757976b47e749d5ffe15853b1eeb65d4196acb4
+Description: GNU Standard C++ Library v3 (shared library subset kit) (loong64)
+ This is used to develop subsets of the libstdc++ shared libraries for
+ use on custom installation floppies and in embedded systems.
+ .
+ Unless you are making one of those, you will not need this package.
+ .
+ This package contains files for loong64 architecture, for use in cross-compile
+ environment.
+Built-Using: gcc-12 (= 12.2.0-14)
+Homepage: http://gcc.gnu.org/
+
+Package: libstdc++6-loong64-cross
+Priority: optional
+Section: devel
+Installed-Size: 2194
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: all
+Source: gcc-12-cross-ports (12)
+Version: 12.2.0-14cross1
+Replaces: libstdc++6-12-dbg-loong64-cross (<< 4.9.0-3)
+Provides: libstdc++6-loong64-dcv1
+Depends: gcc-12-cross-base (>= 12.2.0-14), libc6-loong64-cross (>= 2.36), libgcc-s1-loong64-cross (>= 12.2.0-14cross1)
+Conflicts: scim (<< 1.4.2-1)
+Filename: pool/main/g/gcc-12-cross-ports/libstdc++6-loong64-cross_12.2.0-14cross1_all.deb
+Size: 543148
+MD5sum: a878b8d3a3a0f1ee3efb083ef8442e17
+SHA1: 1ed81b3b40d0ab722dee4dec11a44fd782002548
+SHA256: 38399b3314979045c37f70fcfdf5dfdfe0d11d12d1a2e6e4faa87ada4927260c
+SHA512: 5a791eb36a0c4b068187dc0af37b72ec198c03010d8d86043b7e2168d80436a52ead679700d469f4c6b6656787fd63067fc6ad0bd1c1f14c2e05005260500b97
+Description: GNU Standard C++ Library v3 (loong64)
+ This package contains an additional runtime library for C++ programs
+ built with the GNU compiler.
+ .
+ libstdc++-v3 is a complete rewrite from the previous libstdc++-v2, which
+ was included up to g++-2.95. The first version of libstdc++-v3 appeared
+ in g++-3.0.
+ .
+ This package contains files for loong64 architecture, for use in cross-compile
+ environment.
+Built-Using: gcc-12 (= 12.2.0-14)
+Homepage: http://gcc.gnu.org/
+
+Package: linux-config-6.1
+Priority: optional
+Section: kernel
+Installed-Size: 710
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: loong64
+Source: linux
+Version: 6.1.55-1
+Recommends: linux-source-6.1
+Filename: pool/main/l/linux/linux-config-6.1_6.1.55-1_loong64.deb
+Size: 721408
+MD5sum: 2688439feb99e4e1155e2427cf2f3f37
+SHA1: 662d08370e5a5e6bb2d32104934d973ed255db3f
+SHA256: 7dc95be437da5726af9f242026c089fdc6816fd7c9ecd58f767247a899a9cea6
+SHA512: 28f906851d6a86e07e8350c5f3bfcae6c9aac0be99ab8a3382bf9a604c8b157f2b715d7c6171f52aa2b84ef0ae9c05fd06fb8c68f616e25f3f8bb69cdc739765
+Description: Debian kernel configurations for Linux 6.1
+ This package contains the configuration files used to build the official
+ Debian kernel files, but without references to Debian's signing
+ certificates.
+ .
+ These can be used as a basis for configuring custom kernels.
+Homepage: https://www.kernel.org/
+Multi-Arch: same
+
+Package: linux-cpupower
+Priority: optional
+Section: admin
+Installed-Size: 832
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: loong64
+Source: linux
+Version: 6.1.55-1
+Depends: libc6 (>= 2.37), libcpupower1 (>= 5.5.8-1~exp1)
+Filename: pool/main/l/linux/linux-cpupower_6.1.55-1_loong64.deb
+Size: 750688
+MD5sum: 4456c37127d0e2b4fd1a574077d3edea
+SHA1: baed7c6411eabdcfa6af7cc57a9ec0b033c9027a
+SHA256: f25d8ffc5534ce0c7f1e89d63ccb76d177cd8e453352ad3cb06a76aebfd8d4cd
+SHA512: dfc40162b735159ea5987ad333a41035152b9ef3e80575bc1e0d2f82e0e5850e25bceb580ea9713badd6db4cce2a04064c7f13701c0464e1584f5a6b858f4733
+Description: CPU power management tools for Linux
+ The cpupower command allows inspection and control of cpufreq and cpuidle
+ tunables for hardware that supports these features.  It replaces
+ "cpufreq-info" and "cpufreq-set" in cpufrequtils.
+Homepage: https://www.kernel.org/
+
+Package: linux-cpupower-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 78
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: loong64
+Source: linux
+Version: 6.1.55-1
+Depends: linux-cpupower (= 6.1.55-1)
+Filename: pool/main/l/linux/linux-cpupower-dbgsym_6.1.55-1_loong64.deb
+Size: 59184
+MD5sum: fff50049fbd8946a04877c8ce895cab6
+SHA1: dcb31a5726664e5824939b29e7e38af00e39aab3
+SHA256: 73c9c1860632be1d2e62d0fab377c6c4668f8460a36ad26901a95711ce136aca
+SHA512: d72caeeb9a8e53423efceaa6549348f161f42068019ae831a2b12dd1c952ddb20a3100136544f488a4fa427871f12d39b94b1e833252e5c8a0182544c58ba489
+Description: debug symbols for linux-cpupower
+Auto-Built-Package: debug-symbols
+Build-Ids: 826c17a79e565ec22a8cd4d060becc33b9574664
+
+Package: linux-headers-6.1.0-13-loong64
+Priority: optional
+Section: kernel
+Installed-Size: 2870
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: loong64
+Source: linux
+Version: 6.1.55-1
+Depends: linux-headers-6.1.0-13-common (= 6.1.55-1), linux-kbuild-6.1 (>= 6.1.55-1), gcc-12
+Filename: pool/main/l/linux/linux-headers-6.1.0-13-loong64_6.1.55-1_loong64.deb
+Size: 1120748
+MD5sum: 107dcad9e4b80c80da906fc765513e88
+SHA1: 4a0b900053f3625e1b1b1c92bfc9da2c67b10857
+SHA256: 4e379db3ad9865c990b9beb0d98538aebd61002d39f23c0599637d1920d27714
+SHA512: af07f71dbb595342f564b7d3c58252b1881b9544bd48db8951df8aa84dc37b26a35e3b68da3c9c201f30fb260e09e561a160748b3ae470d44a8990bd40d284d9
+Description: Header files for Linux 6.1.0-13-loong64
+ This package provides the architecture-specific kernel header files for
+ Linux kernel 6.1.0-13-loong64, generally used for building out-of-tree
+ kernel modules.  These files are going to be installed into
+ /usr/src/linux-headers-6.1.0-13-loong64, and can be used for building
+ modules that load into the kernel provided by the
+ linux-image-6.1.0-13-loong64 package.
+Homepage: https://www.kernel.org/
+
+Package: linux-headers-loong64
+Priority: optional
+Section: kernel
+Installed-Size: 10
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: loong64
+Source: linux
+Version: 6.1.55-1
+Provides: linux-headers-generic
+Depends: linux-headers-6.1.0-13-loong64 (= 6.1.55-1)
+Filename: pool/main/l/linux/linux-headers-loong64_6.1.55-1_loong64.deb
+Size: 1156
+MD5sum: 350be9a59fbd1f22c9579aecaf0e9dd6
+SHA1: e0c834c67b6bf6cdd1690edf22297be6d1aaeae2
+SHA256: 6a120b519babac7b588a6c7a65e24fdceef2c7f2edd7058c75652d3acd57a876
+SHA512: 07fe251516b0eafb4cf4ac14db0849f5ba51f0f60aac22c85efc15bfaf739ad42812c38ebe1f53c5b2e9ab4a4a56abeb1c0821e23bcc3d54bf264c5d6b9a83e7
+Description: Header files for Linux loong64 configuration (meta-package)
+ This package depends on the architecture-specific header files for the
+ latest Linux kernel loong64 configuration.
+Homepage: https://www.kernel.org/
+
+Package: linux-image-6.1.0-13-loong64
+Priority: optional
+Section: kernel
+Installed-Size: 179184
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: loong64
+Source: linux
+Version: 6.1.55-1
+Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool
+Recommends: firmware-linux-free, apparmor
+Suggests: linux-doc-6.1, debian-kernel-handbook, grub-efi-loong64
+Breaks: fwupdate (<< 12-7), initramfs-tools (<< 0.120+deb8u2), wireless-regdb (<< 2019.06.03-1~)
+Filename: pool/main/l/linux/linux-image-6.1.0-13-loong64_6.1.55-1_loong64.deb
+Size: 36697944
+MD5sum: 371687178ffef44e0bfc193d9c8e53c4
+SHA1: 792a2e36c0baf8f04c7c2c0440a311b56fc70459
+SHA256: b30d6da502bbe1530d2bd819564112573e48c41129bad9c887d6d44dc9bf88ee
+SHA512: 32491fb6a13fd26da361bfa9273f6cced74d55c6952367a214bb6215416fa8a4b07f709d46bc279a91f285ad5590f75acf02415e8e0bef9f120b9fe72cec7552
+Description: Linux 6.1 for 64-bit LoongArch platforms
+ The Linux kernel 6.1 and modules for use on 64-bit LoongArch platforms.
+Homepage: https://www.kernel.org/
+
+Package: linux-image-6.1.0-13-loong64-dbg
+Priority: optional
+Section: debug
+Installed-Size: 4055403
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: loong64
+Source: linux
+Version: 6.1.55-1
+Filename: pool/main/l/linux/linux-image-6.1.0-13-loong64-dbg_6.1.55-1_loong64.deb
+Size: 630273820
+MD5sum: 43f81cc5274a94c044a12d587ac12cc5
+SHA1: 5e6486abb12998a3e1b26f1fe573cb66e74e1c68
+SHA256: 5f1841946d640b49fb2e21d6f7fa86eb883ce9d86a17654d4bdc39bc9a5fe31e
+SHA512: d72f8ccf17bc0faa0ac71d0dbfcab7362d151afa7c24d755b3b904cacee003ddb8224db85f6ef1409abc588d00a00519cb9da80e8ebe8246a068ec9fc5a57081
+Description: Debug symbols for linux-image-6.1.0-13-loong64
+ This package provides the detached debug symbols for the Linux kernel and
+ modules in linux-image-6.1.0-13-loong64.
+Homepage: https://www.kernel.org/
+
+Package: linux-image-loong64
+Priority: optional
+Section: kernel
+Installed-Size: 13
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: loong64
+Source: linux
+Version: 6.1.55-1
+Provides: linux-image-generic, linux-latest-modules-6.1.0-13-loong64, wireguard-modules (= 1.0.0)
+Depends: linux-image-6.1.0-13-loong64 (= 6.1.55-1)
+Filename: pool/main/l/linux/linux-image-loong64_6.1.55-1_loong64.deb
+Size: 1428
+MD5sum: 280cae820476113dd81c0dee26ad9538
+SHA1: df3671bd882c385e0ed42e048d30b01bedc3b49f
+SHA256: fada196c46c374489661ab605f9e333928581918456fcf5403e3a3d39d1b0342
+SHA512: 9c3b5363b8e2a5732ecf105f2401324f1c1028180ee23bb88470fbd162f1ea6d7bcf79efe2e4e75ffb3e88b8da418f8998497a440cdb2872879cc337e9935e18
+Description: Linux for 64-bit LoongArch platforms (meta-package)
+ This package depends on the latest Linux kernel and modules for use on
+ 64-bit LoongArch platforms.
+Homepage: https://www.kernel.org/
+
+Package: linux-image-loong64-dbg
+Priority: optional
+Section: kernel
+Installed-Size: 13
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: loong64
+Source: linux
+Version: 6.1.55-1
+Provides: linux-latest-image-dbg
+Depends: linux-image-6.1.0-13-loong64-dbg (= 6.1.55-1)
+Filename: pool/main/l/linux/linux-image-loong64-dbg_6.1.55-1_loong64.deb
+Size: 1320
+MD5sum: 6a73845c9e6d6a541ff0b0bf1f0d94dd
+SHA1: b28e941587aa7a4c45bcd03622462eed09d66139
+SHA256: c0359931eaa242326d8b8e08281c5fd10d6b8ea31299d29666c84b00ebd128d8
+SHA512: 1015b9bd9c809d5a927a4eb1b641f83412ef32a52009963f1692c9c40eff8fdc30861b5697fd477574fdcac4d5c764db228ea66c29fd7c0d1cd03c1c32cb5b14
+Description: Debugging symbols for Linux loong64 configuration (meta-package)
+ This package depends on the detached debugging symbols for the latest
+ Linux kernel loong64 configuration.
+Homepage: https://www.kernel.org/
+
+Package: linux-kbuild-6.1
+Priority: optional
+Section: kernel
+Installed-Size: 1844
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: loong64
+Source: linux
+Version: 6.1.55-1
+Depends: libc6 (>= 2.37), libelf1 (>= 0.142), libssl3 (>= 3.0.0)
+Filename: pool/main/l/linux/linux-kbuild-6.1_6.1.55-1_loong64.deb
+Size: 963956
+MD5sum: f5a4e34d73e6f09de81130cf15859ecc
+SHA1: 7f0e7f21b63c70bb09b33f4bf1c6e28d34f6f795
+SHA256: 9dc788d72fc3212eb9d64e37827fe623d39da64be8bffd2a278924d51657059d
+SHA512: 181216b8353b951839903457eb99b616b3c42c94d63f99c531bf18d153c5889ea54c146fcc5651bc57ade1f66df76265ee801387f15fd989711ad419f24b9d5d
+Description: Kbuild infrastructure for Linux 6.1
+ This package provides the kbuild infrastructure for the headers packages
+ for Linux kernel version 6.1.
+Homepage: https://www.kernel.org/
+Multi-Arch: foreign
+
+Package: linux-kbuild-6.1-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 1103
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: loong64
+Source: linux
+Version: 6.1.55-1
+Depends: linux-kbuild-6.1 (= 6.1.55-1)
+Filename: pool/main/l/linux/linux-kbuild-6.1-dbgsym_6.1.55-1_loong64.deb
+Size: 958800
+MD5sum: b205d5dd2f3a3ef409592cda0f82b060
+SHA1: 83de6eef3e2d97271029f1337de3437308871626
+SHA256: 6ab70df2ec38259fe7c09cb16614ca17b75837eafd286f84672608d43a65f746
+SHA512: 9bbb6dbe0184600a5eaf9d2b09a4ecb8f686a3d36d3aa5a44b1b5ededa903ea43523268bf576b1e5eae88b25ccf39123da8a270b4f4cc3afd49f54c47cb01700
+Description: debug symbols for linux-kbuild-6.1
+Auto-Built-Package: debug-symbols
+Build-Ids: 029a4bb570d5b531799f2128b3e49cf59cc1e338 1036023fbc8c6cdc6ab411198c585884b228075f 1e9e2f67d3ea0de05fba2fbce5cc9d3267ede103 44d43578560cea7e2fddb88d4bca22f3a84b61d0 5fc138f8030fa81ccdb0676dd04c3f9f1ab72e3a bfdc1a57ad02eab2accf01fb1cc2cb299928802e c383bdabfa702cfba4d87234b74a43ee49fc40b4 cb62de1bacfbda0fe41642bd32d88a5cf55da733 d7c10c5da95de6578a4a00b4aa19b36a5fefdda9 e24646ad870b1ef93f99426c2c84682475872dc4 e27160eeb010ce1a3d74d0cf9c199231b155d85c e57ce96cca7d3812060e2f7e3fae730ef524c880 eb648c34623a395eb49d3a6f8e91c7282d8c3df3 edb3288b3b6add0ec6c62a35977675e967f66bea edfafb754e74bbf774c9d1081db68dfc699a4e53
+
+Package: linux-libc-dev
+Priority: optional
+Section: devel
+Installed-Size: 6367
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: loong64
+Source: linux
+Version: 6.1.55-1
+Filename: pool/main/l/linux/linux-libc-dev_6.1.55-1_loong64.deb
+Size: 1823820
+MD5sum: c4b066bd44fcd6e5d72d646716d2cd4f
+SHA1: ee251ef164372519c29b4d6471e3ff72ffe2693b
+SHA256: 7ddac8d9b54702b059dc3cecea15977744197dc23d0ddc0ece69036cb4bae003
+SHA512: 98b83e07789ed20d1b70cc54d5f1279d9d4832e747c3cbb19edbd0e0f0c1fe23cc49b0cf0f9ebb6f17319d3f0efff0a160110f497d8398ef261efb4639a64382
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These
+ headers are used by the installed headers for GNU libc and other system
+ libraries.
+Homepage: https://www.kernel.org/
+Multi-Arch: same
+
+Package: linux-libc-dev-loong64-cross
+Priority: optional
+Section: devel
+Installed-Size: 7053
+Maintainer: Cross Toolchain Base Team <cross-toolchain-base-devs@lists.launchpad.net>
+Architecture: all
+Source: cross-toolchain-base-ports (62)
+Version: 6.1.55-1cross1
+Provides: linux-kernel-headers-loong64-cross, linux-libc-dev-loong64-dcv1
+Filename: pool/main/c/cross-toolchain-base-ports/linux-libc-dev-loong64-cross_6.1.55-1cross1_all.deb
+Size: 1955936
+MD5sum: 2b3d70f5491e49ebc31dd6b4d50fdc79
+SHA1: 1df12b42f4d5f238c1b0596659b25d26863fc5d8
+SHA256: b69c4c08ae0cc35a5509cf72ed4295cfaebf9a2abeb6812b3be859813f083739
+SHA512: 230d5e72dfb564b8881970abe1001a14db1b9456ee80b532f2fd45bedc09a62cbd926ac37a37673b1d2ee1bb50ac1b5b4b7376bb18cadd6fcd51c275ec815cac
+Description: Linux Kernel Headers for development (for cross-compiling)
+ This package provides headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system
+ libraries. They are NOT meant to be used to build third-party modules for
+ your kernel. Use linux-headers-* packages for that.
+Built-Using: linux (= 6.1.55-1)
+Multi-Arch: foreign
+
+Package: linux-source
+Priority: optional
+Section: kernel
+Installed-Size: 712
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: all
+Source: linux
+Version: 6.1.55-1
+Depends: linux-source-6.1 (= 6.1.55-1)
+Filename: pool/main/l/linux/linux-source_6.1.55-1_all.deb
+Size: 721440
+MD5sum: b81afb7d33da15a752528a3f1c247beb
+SHA1: 5c60cfa520400cb6d067d0559b707c156872d409
+SHA256: c83618314393f07413d090e9c33c2bad3a7fd724a18f118c2b9942ee6bae7306
+SHA512: 157af61f39d022c9c1f6d60c09e6a559c56336568c1709244eb5172f5049960406b29eeacaafc75fe08f406dae4065b377632693ba6bc79c5af623fca7bba533
+Description: Linux kernel source (meta-package)
+ This package depends on packages containing the sources of the latest
+ Linux kernel.
+Homepage: https://www.kernel.org/
+
+Package: linux-source-6.1
+Priority: optional
+Section: kernel
+Installed-Size: 134929
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: all
+Source: linux
+Version: 6.1.55-1
+Depends: binutils, xz-utils
+Recommends: build-essential, bc, rsync, kmod, cpio, bison, flex, libelf-dev, libssl-dev, linux-config-6.1
+Suggests: libncurses-dev | ncurses-dev, qtbase5-dev, pkg-config
+Filename: pool/main/l/linux/linux-source-6.1_6.1.55-1_all.deb
+Size: 138173764
+MD5sum: 131de3402ae383312417251e884b000c
+SHA1: fdb6de04f6aa7d54354cba030573f2b6fe64449c
+SHA256: 188497abf5427d33ff4e9a028b5530bb19697b8b926f6ad8afac02574f9ff033
+SHA512: 99e473117a318a01f56e7c3ec508b14bc837fcb89744fce1931352cbd4f8df27c48a956679f07525c580817d03da23f84ade6d74a6bc25f7d73a4d91a4430ca2
+Description: Linux kernel source for version 6.1 with Debian patches
+ This package provides source code for the Linux kernel version 6.1. This
+ source closely tracks official Linux kernel releases.  Debian's
+ modifications to that source consist of security fixes, bug fixes, and
+ features that have already been (or are believed to be) accepted by the
+ upstream maintainers.
+Homepage: https://www.kernel.org/
+Multi-Arch: foreign
+
+Package: linux-support-6.1.0-13
+Priority: optional
+Section: devel
+Installed-Size: 1676
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: all
+Source: linux
+Version: 6.1.55-1
+Depends: python3:any, python3-jinja2
+Filename: pool/main/l/linux/linux-support-6.1.0-13_6.1.55-1_all.deb
+Size: 769396
+MD5sum: 99c0a4c38a74fb629bafac041a53c23e
+SHA1: 16253541218c19f3c5a455833bf7cad325633091
+SHA256: bd90ee3285b9fa138ccd1a52e43f1c83f988a031c88f157c2406760153c2db02
+SHA512: 092e57ba02fea6ea75191e94944d29f6d0f1a246a1c04a904b19c589f46d41233e7542c8af5fe2959650ab7f51673bb0d1bfbf2503a36e519dd745b4deee309f
+Description: Support files for Linux 6.1
+ This package provides support files for the Linux kernel build, e.g.
+ scripts to handle ABI information and for generation of build system meta
+ data.
+Homepage: https://www.kernel.org/
+Multi-Arch: foreign
+
+Package: usbip
+Priority: optional
+Section: admin
+Installed-Size: 843
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: loong64
+Source: linux (6.1.55-1)
+Version: 2.0+6.1.55-1
+Depends: usb.ids, libc6 (>= 2.37), libudev1 (>= 183), libwrap0 (>= 7.6-4~)
+Filename: pool/main/l/linux/usbip_2.0+6.1.55-1_loong64.deb
+Size: 753684
+MD5sum: b5a55415bd531ffb63f696b00c51e4eb
+SHA1: b101313a4b27a18fb7a3e39e19e1fbe60440d2e4
+SHA256: d43e83704f487a031dd1516da29a156ca56e4e7a885570c8f1aa7bc219b71e06
+SHA512: 5f9bebeb905169c8b6ca6daf1129faab7269eeb4f00de614bb2facac01286992a7fcbd990863a166efbb5bac988c84085aff6f1f54f0583ab5af9c7cbe08398a
+Description: USB device sharing system over IP network
+ USB/IP is a system for sharing USB devices over the network.
+ .
+ To share USB devices between computers with their full functionality,
+ USB/IP encapsulates "USB requests" into IP packets and transmits them
+ between computers.
+ .
+ Original USB device drivers and applications can be used for remote USB
+ devices without any modification of them.  A computer can use remote USB
+ devices as if they were directly attached.
+ .
+ Currently USB/IP provides no access control or encryption.  It should only
+ be used in trusted environments.
+ .
+ This package provides the server component 'usbipd' and the client tool
+ 'usbip'.
+Homepage: https://www.kernel.org/
+
+Package: usbip-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 174
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Architecture: loong64
+Source: linux (6.1.55-1)
+Version: 2.0+6.1.55-1
+Depends: usbip (= 2.0+6.1.55-1)
+Filename: pool/main/l/linux/usbip-dbgsym_2.0+6.1.55-1_loong64.deb
+Size: 144848
+MD5sum: 6e218681368009e55c9321d6369dfb6e
+SHA1: cfd5288420b356c374c5469f6646f3fa891d14b6
+SHA256: 8644fc5324ece172e3064c07465d80ed598e059adcce1a6e928da3cfe33c7696
+SHA512: e45ce5b448d04755ac0e901420da57ad06d533dd05f652c09dba90915ffed8c79a947fa7c470fe7fc53a63697f900efdf1cfa0de1a0b0848bc119c8da0559e7e
+Description: debug symbols for usbip
+Auto-Built-Package: debug-symbols
+Build-Ids: 7a36d02189e8adf32f1828be353003510cd8392c f6c368100f583f5b9645a480a672d7a7487a7f7b
+
+Package: vxlan-huai-utils
+Priority: optional
+Section: admin
+Installed-Size: 26
+Maintainer: Aron Xu <happyaron.xu@gmail.com>
+Architecture: all
+Version: 1.0
+Depends: python3:any (>= 3.5), python3-yaml, ifupdown
+Filename: pool/main/v/vxlan-huai-utils/vxlan-huai-utils_1.0_all.deb
+Size: 2980
+MD5sum: a30b3cf6686342f5739f5baddbcbb98c
+SHA1: a21c2c1506bc546fe39dead6133394ef0dbb552f
+SHA256: 1c0df39ee0a2df093d7398102824d2aac195560ba594f6f1644f0327250f1c00
+SHA512: 4559def6dcf12447ad94ba6d4e1c87d701a67a4524e66be3c97d99267f9bfef54e9f62f01ca219f4094802d2380a37fbb6fa5bcee33025f431d454e0428db0d4
+Description: vxlan utilities by shanker huai
+ vxlan utilities by shanker huai
+

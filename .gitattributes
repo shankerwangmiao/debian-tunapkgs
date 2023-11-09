@@ -1,0 +1,8 @@
+debian-tunapkgs/pool/main/l/linux/linux-image-6.1.0-13-loong64-dbg_6.1.55-1_loong64.deb filter=lfs diff=lfs merge=lfs -text
+debian-tunapkgs/pool/main/l/linux/linux_6.1.55.orig.tar.xz filter=lfs diff=lfs merge=lfs -text
+debian-tunapkgs/pool/main/l/linux/linux-source-6.1_6.1.55-1_all.deb filter=lfs diff=lfs merge=lfs -text
+debian-tunapkgs/pool/main/l/linux/linux-image-6.1.0-13-loong64_6.1.55-1_loong64.deb filter=lfs diff=lfs merge=lfs -text
+debian-tunapkgs/pool/main/g/grub2/grub-common-dbgsym_2.12~rc1-11_loong64.deb filter=lfs diff=lfs merge=lfs -text
+debian-tunapkgs/pool/main/g/gcc-12-cross-ports/gcc-12-loongarch64-linux-gnu_12.2.0-14cross1_arm64.deb filter=lfs diff=lfs merge=lfs -text
+debian-tunapkgs/pool/main/libp/libpod/podman-dbgsym_4.7.1+ds4-5_loong64.deb filter=lfs diff=lfs merge=lfs -text
+debian-tunapkgs/pool/main/b/binutils/binutils_2.40.orig.tar.xz filter=lfs diff=lfs merge=lfs -text

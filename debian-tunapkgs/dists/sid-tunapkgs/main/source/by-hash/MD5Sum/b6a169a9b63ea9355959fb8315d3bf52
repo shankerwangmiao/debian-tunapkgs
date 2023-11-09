@@ -1,0 +1,225 @@
+Package: efibootmgr
+Binary: efibootmgr
+Version: 17-2
+Maintainer: Debian UEFI Maintainers <debian-efi@lists.debian.org>
+Build-Depends: debhelper-compat (= 13), pkg-config, libefivar-dev (>= 30), libefiboot-dev (>= 30), libpopt-dev
+Architecture: amd64 i386 ia64 armhf arm64 armel riscv64 x32 mips64el loong64
+Standards-Version: 4.5.1
+Format: 3.0 (quilt)
+Directory: pool/main/e/efibootmgr
+Files:
+ 1a3dd8f3903a98dabb1474e29aea5592 7672 efibootmgr_17-2.debian.tar.xz
+ d11582c8cc1d8dded9fb6eaf752af3de 1199 efibootmgr_17-2.dsc
+ 6ae315936d9bc8613b3a4cb8a4064128 41643 efibootmgr_17.orig.tar.gz
+Checksums-Sha1:
+ c76fcea45d8462fdeadbb957e8b4760ba2c36f06 7672 efibootmgr_17-2.debian.tar.xz
+ eb10eff7e154951e3273e2d5a989c858e504533f 1199 efibootmgr_17-2.dsc
+ 9251d346285f96844049d305d5c021f434f7c6de 41643 efibootmgr_17.orig.tar.gz
+Checksums-Sha256:
+ 026fde1608e43cca9ab5a2552d9a4912120c53d6eeba57021f518d2b989d2684 7672 efibootmgr_17-2.debian.tar.xz
+ 42bb0ba09ca4ab9ecf6024de3d1f2008f48e7cc924c0fbef0c4456d7246f3ef1 1199 efibootmgr_17-2.dsc
+ 22a95ebe0d5c9fb2915b3a100450f8f37484d1dbb8b296f55b343cc84f10397d 41643 efibootmgr_17.orig.tar.gz
+Checksums-Sha512:
+ 80cb592ccceef265372b2917fe83240c08debeb0e6c915b0cbdf67a191a31a62b42f65f93a8de230597286446a47255d8bee99aa82f200c096c3915800fd7d38 7672 efibootmgr_17-2.debian.tar.xz
+ 7dfe945b0b8c65209c1f941bf8c11fe8e2cd07c29ef41c334d8a3dab2513e22171f8c46db9bb81e3c300dc9367eb7ac1642ab1b1988d934fa454767b1abe4f9f 1199 efibootmgr_17-2.dsc
+ 10c7ad9a79f23dcd4708dc4f42701196af7aa11f5e9a6468ea51f7013d4caeba6c92527ba1304f6e3b2ef3b51b3b69ea1a30f81bb099a8aea49eeb30eb631e1d 41643 efibootmgr_17.orig.tar.gz
+Package-List:
+ efibootmgr deb admin optional arch=amd64,i386,ia64,armhf,arm64,armel,riscv64,x32,mips64el,loong64
+Uploaders: Steve McIntyre <93sam@debian.org>, Mario Limonciello <mario.limonciello@dell.com>
+Vcs-Browser: https://salsa.debian.org/efi-team/efibootmgr
+Vcs-Git: https://salsa.debian.org/efi-team/efibootmgr.git
+
+Package: golang-github-cilium-ebpf
+Binary: golang-github-cilium-ebpf-dev
+Version: 0.12.2-1
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Build-Depends: debhelper-compat (= 13), dh-golang, golang-any (>= 2:1.13~), golang-golang-x-sys-dev (>= 0.0~git20211117~), golang-golang-x-exp-dev
+Architecture: all
+Standards-Version: 4.6.1
+Format: 3.0 (quilt)
+Directory: pool/main/g/golang-github-cilium-ebpf
+Files:
+ 643f655f6289e07c45410ad172128dd6 3676 golang-github-cilium-ebpf_0.12.2-1.debian.tar.xz
+ 456b58c9b90163ff10456f3ef7072def 1406 golang-github-cilium-ebpf_0.12.2-1.dsc
+ 6e6494bd02df0ddb388dfc1f5a008516 1647275 golang-github-cilium-ebpf_0.12.2.orig.tar.gz
+Checksums-Sha1:
+ f9e789afec2b9f065d5004c29633d9db92aa42b6 3676 golang-github-cilium-ebpf_0.12.2-1.debian.tar.xz
+ a66b2da20e4c0cfb02cb0fd1ea943c5bb9c3c2fe 1406 golang-github-cilium-ebpf_0.12.2-1.dsc
+ 9e44cc5cd1a179a36c9455425736955e9b68772e 1647275 golang-github-cilium-ebpf_0.12.2.orig.tar.gz
+Checksums-Sha256:
+ 9d2997cbc044b1e0eb46d6b6a805d6fe8e5d0e19cb36f0d3d8d51c7ae28fa904 3676 golang-github-cilium-ebpf_0.12.2-1.debian.tar.xz
+ 1eb19ed8fc48e8e1c24beb9c3389adecc69dcd5c0acebe7c1b5bd3159541d5c3 1406 golang-github-cilium-ebpf_0.12.2-1.dsc
+ bb1e431079033d2e13dd7a527c49eda2dcfbfff669eef1a5ada40e67e91ac80a 1647275 golang-github-cilium-ebpf_0.12.2.orig.tar.gz
+Checksums-Sha512:
+ 9bcc9c87c80064bdc1961aee230a1cc9dc269eb19ae6aaea5ab62c24b2e155b8abdf8d2e9c72bfd4f0acbb8f0ae509505235b1755147df08032c4e24488d437e 3676 golang-github-cilium-ebpf_0.12.2-1.debian.tar.xz
+ f87e5056a1e6912a35891b66153f11394956ff232311748c769a5a383451b94667b81f1592034e36a6603251436e8113af50ad720e9d09c7bc0fef7dee5e4ec6 1406 golang-github-cilium-ebpf_0.12.2-1.dsc
+ 1407b1e616dd7a6655665557a36104bfa3abc4857a2cfa1976cdc1a49cc22a41473bc3c1f44aea321d2181d6a73797339cab9d546807e443ed6f9832df5a5200 1647275 golang-github-cilium-ebpf_0.12.2.orig.tar.gz
+Go-Import-Path: github.com/cilium/ebpf
+Homepage: https://github.com/cilium/ebpf
+Package-List:
+ golang-github-cilium-ebpf-dev deb golang optional arch=all
+Testsuite: autopkgtest-pkg-go
+Uploaders: Shengjing Zhu <zhsj@debian.org>,
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-cilium-ebpf
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-cilium-ebpf.git
+
+Package: grub2
+Binary: grub2, grub-linuxbios, grub-efi, grub-common, grub2-common, grub-emu, grub-emu-dbg, grub-pc-bin, grub-pc-dbg, grub-pc, grub-rescue-pc, grub-coreboot-bin, grub-coreboot-dbg, grub-coreboot, grub-efi-ia32-bin, grub-efi-ia32-dbg, grub-efi-ia32, grub-efi-ia32-signed-template, grub-efi-amd64-bin, grub-efi-amd64-dbg, grub-efi-amd64, grub-efi-amd64-signed-template, grub-efi-ia64-bin, grub-efi-ia64-dbg, grub-efi-ia64, grub-efi-arm-bin, grub-efi-arm-dbg, grub-efi-arm, grub-efi-arm64-bin, grub-efi-arm64-dbg, grub-efi-arm64, grub-efi-arm64-signed-template, grub-efi-riscv64-bin, grub-efi-riscv64-dbg, grub-efi-riscv64, grub-efi-loong64-bin, grub-efi-loong64-dbg, grub-efi-loong64, grub-ieee1275-bin, grub-ieee1275-dbg, grub-ieee1275, grub-firmware-qemu, grub-uboot-bin, grub-uboot-dbg, grub-uboot, grub-xen-bin, grub-xen-dbg, grub-xen, grub-xen-host, grub-yeeloong-bin, grub-yeeloong-dbg, grub-yeeloong, grub-theme-starfield, grub-mount-udeb
+Version: 2.12~rc1-11
+Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
+Build-Depends: debhelper-compat (= 13), patchutils, python3, flex, bison, gawk, po-debconf, help2man, texinfo, gcc-12, gcc-12-multilib [i386 kopensolaris-i386 any-amd64 any-ppc64 any-sparc], xfonts-unifont, libfreetype6-dev, gettext, libdevmapper-dev [linux-any], libgeom-dev (>= 8.2+ds1-1~) [kfreebsd-any] | libgeom-dev (<< 8.2) [kfreebsd-any], libsdl2-dev [!hurd-any], xorriso, qemu-system [i386 kfreebsd-i386 kopensolaris-i386 any-amd64], cpio [i386 kopensolaris-i386 amd64 x32], parted [!hurd-any], libfuse3-dev [linux-any kfreebsd-any], fonts-dejavu-core, liblzma-dev, liblzo2-dev, lzop, dosfstools [any-i386 any-amd64 any-arm64], squashfs-tools [any-i386 any-amd64 any-arm64], wamerican, libparted-dev [any-powerpc any-ppc64 any-ppc64el], pkg-config, bash-completion, libefiboot-dev [i386 amd64 ia64 x32 armel armhf arm64 riscv64 loong64], libefivar-dev [i386 amd64 ia64 x32 armel armhf arm64 riscv64 loong64]
+Build-Conflicts: autoconf2.13, libnvpair-dev, libzfs-dev
+Architecture: any
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Directory: pool/main/g/grub2
+Files:
+ 758d4cf745f8e8bbf5ca9d493ac7cbaf 1073072 grub2_2.12~rc1-11.debian.tar.xz
+ 6822a5d94b511d1794f37e5635cd624d 6531 grub2_2.12~rc1-11.dsc
+ b02415b4dcfd3d31482b33d3f6b79114 6589460 grub2_2.12~rc1.orig.tar.xz
+Checksums-Sha1:
+ 25b01f7d89a482e798c8de4b7316f2cca65daf2a 1073072 grub2_2.12~rc1-11.debian.tar.xz
+ b6f4710edbf7f076be7dbbf00d33395622737eca 6531 grub2_2.12~rc1-11.dsc
+ 4dae8f40e6405a56f8ed8f5a82250c7b7b97ce70 6589460 grub2_2.12~rc1.orig.tar.xz
+Checksums-Sha256:
+ 5724aaa5b67e751fb7e43d1a872640e08d4446c9b0fc76b5a7de1ecaf0cca5bd 1073072 grub2_2.12~rc1-11.debian.tar.xz
+ 230e7141f4704b7719aa07deba99099b62e033dd18f59730b42ae5892731838b 6531 grub2_2.12~rc1-11.dsc
+ 7a60c08b0ff1bac630cae6293b73871a541610a7fb1a7337aeb5e96f359cd650 6589460 grub2_2.12~rc1.orig.tar.xz
+Checksums-Sha512:
+ b7e220a1436cba02ffc7684c5f1fa60f705e5d065a383082ed1c6df44daf44e305dee30690cd95e6790a127f8378430af15b190586552dd63b15776e089b78a0 1073072 grub2_2.12~rc1-11.debian.tar.xz
+ 94fe7713c2f1169322d49077e73c3306a09b4d87c81608871232f839c59ccaec380b9fce28123c96a897cf6a641a2980773071d37ac3d79cfd0d9fe6af68f3c6 6531 grub2_2.12~rc1-11.dsc
+ 6f1fbce004b6dccf58e203bf6a6eeb771bac5ecc54b503265e56a97e9adce0221677bb3e64328144ec921f327a099f0345e7a9952be41cd8808f7635cded52cb 6589460 grub2_2.12~rc1.orig.tar.xz
+Homepage: https://www.gnu.org/software/grub/
+Package-List:
+ grub-common deb admin optional arch=any
+ grub-coreboot deb admin optional arch=any-i386,any-amd64
+ grub-coreboot-bin deb admin optional arch=any-i386,any-amd64
+ grub-coreboot-dbg deb debug optional arch=any-i386,any-amd64
+ grub-efi deb admin optional arch=any-i386,any-amd64,any-arm64,any-ia64,any-arm,any-riscv64,any-loong64
+ grub-efi-amd64 deb admin optional arch=i386,kopensolaris-i386,any-amd64
+ grub-efi-amd64-bin deb admin optional arch=i386,kopensolaris-i386,any-amd64
+ grub-efi-amd64-dbg deb debug optional arch=i386,kopensolaris-i386,any-amd64
+ grub-efi-amd64-signed-template deb admin optional arch=amd64
+ grub-efi-arm deb admin optional arch=any-arm
+ grub-efi-arm-bin deb admin optional arch=any-arm
+ grub-efi-arm-dbg deb debug optional arch=any-arm
+ grub-efi-arm64 deb admin optional arch=any-arm64
+ grub-efi-arm64-bin deb admin optional arch=any-arm64
+ grub-efi-arm64-dbg deb debug optional arch=any-arm64
+ grub-efi-arm64-signed-template deb admin optional arch=arm64
+ grub-efi-ia32 deb admin optional arch=any-i386,any-amd64
+ grub-efi-ia32-bin deb admin optional arch=any-i386,any-amd64
+ grub-efi-ia32-dbg deb debug optional arch=any-i386,any-amd64
+ grub-efi-ia32-signed-template deb admin optional arch=i386
+ grub-efi-ia64 deb admin optional arch=any-ia64
+ grub-efi-ia64-bin deb admin optional arch=any-ia64
+ grub-efi-ia64-dbg deb debug optional arch=any-ia64
+ grub-efi-loong64 deb admin optional arch=any-loong64
+ grub-efi-loong64-bin deb admin optional arch=any-loong64
+ grub-efi-loong64-dbg deb debug optional arch=any-loong64
+ grub-efi-riscv64 deb admin optional arch=any-riscv64
+ grub-efi-riscv64-bin deb admin optional arch=any-riscv64
+ grub-efi-riscv64-dbg deb debug optional arch=any-riscv64
+ grub-emu deb admin optional arch=any-i386,any-amd64,any-powerpc
+ grub-emu-dbg deb debug optional arch=any-i386,any-amd64,any-powerpc
+ grub-firmware-qemu deb admin optional arch=any-i386,any-amd64
+ grub-ieee1275 deb admin optional arch=any-i386,any-amd64,any-powerpc,any-ppc64,any-ppc64el,any-sparc,any-sparc64
+ grub-ieee1275-bin deb admin optional arch=any-i386,any-amd64,any-powerpc,any-ppc64,any-ppc64el,any-sparc,any-sparc64
+ grub-ieee1275-dbg deb debug optional arch=any-i386,any-amd64,any-powerpc,any-ppc64,any-ppc64el,any-sparc,any-sparc64
+ grub-linuxbios deb oldlibs optional arch=any-i386,any-amd64
+ grub-mount-udeb udeb debian-installer optional arch=linux-any,kfreebsd-any
+ grub-pc deb admin optional arch=any-i386,any-amd64
+ grub-pc-bin deb admin optional arch=any-i386,any-amd64
+ grub-pc-dbg deb debug optional arch=any-i386,any-amd64
+ grub-rescue-pc deb admin optional arch=any-i386,any-amd64
+ grub-theme-starfield deb admin optional arch=any-i386,any-amd64,any-powerpc,any-ppc64,any-ppc64el,any-sparc,any-sparc64,any-mipsel,any-ia64,any-arm,any-arm64,any-riscv64,any-loong64
+ grub-uboot deb admin optional arch=any-arm
+ grub-uboot-bin deb admin optional arch=any-arm
+ grub-uboot-dbg deb debug optional arch=any-arm
+ grub-xen deb admin optional arch=i386,amd64
+ grub-xen-bin deb admin optional arch=i386,amd64
+ grub-xen-dbg deb debug optional arch=i386,amd64
+ grub-xen-host deb admin optional arch=i386,amd64
+ grub-yeeloong deb admin optional arch=any-mipsel
+ grub-yeeloong-bin deb admin optional arch=any-mipsel
+ grub-yeeloong-dbg deb debug optional arch=any-mipsel
+ grub2 deb oldlibs optional arch=any-i386,any-amd64,any-powerpc,any-ppc64,any-ppc64el,any-sparc,any-sparc64
+ grub2-common deb admin optional arch=any-i386,any-amd64,any-powerpc,any-ppc64,any-ppc64el,any-sparc,any-sparc64,any-mipsel,any-ia64,any-arm,any-arm64,any-riscv64,any-loong64
+Uploaders: Felix Zielcke <fzielcke@z-51.de>, Jordi Mallach <jordi@debian.org>, Steve McIntyre <93sam@debian.org>, Julian Andres Klode <jak@debian.org>
+Vcs-Browser: https://salsa.debian.org/grub-team/grub
+Vcs-Git: https://salsa.debian.org/grub-team/grub.git
+
+Package: libpod
+Binary: podman, podman-docker, podman-remote
+Version: 4.7.1+ds4-5
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Build-Depends: debhelper-compat (= 13), bash-completion, conmon, dh-golang, go-md2man, golang-dbus-dev (>= 5.0.2~), golang-ginkgo-dev, golang-github-appc-cni-dev (>= 0.8), golang-github-buger-goterm-dev, golang-github-checkpoint-restore-go-criu-dev (>> 6), golang-github-container-orchestrated-devices-container-device-interface-dev, golang-github-containerd-cgroups-dev, golang-github-containers-buildah-dev (>= 1.32), golang-github-containers-common-dev (>= 0.56), golang-github-containers-conmon-dev, golang-github-containers-image-dev (>= 5.28.0-4~), golang-github-containers-ocicrypt-dev, golang-github-containers-psgo-dev, golang-github-containers-storage-dev (>= 1.46), golang-github-coreos-bbolt-dev (>= 1.3.7~), golang-github-coreos-go-iptables-dev (>= 0.4.2~), golang-github-coreos-go-systemd-dev (>= 20~), golang-github-cyphar-filepath-securejoin-dev (>= 0.2.2~), golang-github-digitalocean-go-libvirt-dev, golang-github-digitalocean-go-qemu-dev, golang-github-docker-distribution-dev (>= 2.7.1~), golang-github-docker-docker-dev (>= 20.10.0~), golang-github-docker-go-connections-dev (>= 0.4.0~), golang-github-docker-go-units-dev (>= 0.4.0~), golang-github-docker-spdystream-dev, golang-github-dtylman-scp-dev, golang-github-fullsailor-pkcs7-dev, golang-github-ghodss-yaml-dev, golang-github-go-logr-logr-dev, golang-github-google-shlex-dev, golang-github-google-uuid-dev, golang-github-gorilla-schema-dev, golang-github-hashicorp-go-multierror-dev, golang-github-json-iterator-go-dev, golang-github-mattn-go-sqlite3-dev, golang-github-moby-term-dev, golang-github-mrunalp-fileutils-dev, golang-github-nxadm-tail-dev, golang-github-opencontainers-go-digest-dev, golang-github-opencontainers-image-spec-dev, golang-github-opencontainers-runc-dev (>= 1.1.3+ds1-6), golang-github-opencontainers-runtime-tools-dev (>= 0.9.0+dfsg-3~), golang-github-opencontainers-selinux-dev (>= 1.11~), golang-github-openshift-imagebuilder-dev, golang-github-pkg-errors-dev, golang-github-pkg-profile-dev, golang-github-rootless-containers-rootlesskit-dev, golang-github-seccomp-libseccomp-golang-dev, golang-github-sirupsen-logrus-dev, golang-github-stretchr-testify-dev, golang-github-ulikunitz-xz-dev, golang-github-vbatts-tar-split-dev, golang-github-vbauerster-mpb-dev (>= 8), golang-github-vishvananda-netlink-dev (>= 1.0.0+git20181030~), golang-github-vividcortex-ewma-dev, golang-go, golang-go-zfs-dev, golang-go.opencensus-dev, golang-golang-x-crypto-dev, golang-golang-x-net-dev (>= 1:0.0+git20210119), golang-golang-x-sys-dev, golang-golang-x-text-dev, golang-golang-x-tools, golang-golang-x-xerrors-dev, golang-gomega-dev, golang-google-genproto-dev, golang-google-grpc-dev, golang-gopkg-inf.v0-dev, golang-gopkg-square-go-jose.v2-dev, golang-gopkg-yaml.v3-dev, golang-k8s-klog-dev, golang-k8s-sigs-structured-merge-diff-dev (>> 4), golang-k8s-sigs-yaml-dev, golang-toml-dev, libapparmor-dev, libbtrfs-dev, libdevmapper-dev, libglib2.0-dev, libsubid-dev
+Architecture: any
+Standards-Version: 4.6.2
+Format: 3.0 (quilt)
+Directory: pool/main/libp/libpod
+Files:
+ c4382c9d7dee032ccca5bc1bb9ad79db 21284 libpod_4.7.1+ds4-5.debian.tar.xz
+ 6663a1afa2646c7473b5679c98d9639f 4360 libpod_4.7.1+ds4-5.dsc
+ cb9e4c5c319b8d9cab9fbacfdf28b354 2789508 libpod_4.7.1+ds4.orig.tar.xz
+Checksums-Sha1:
+ 17d0bc18fde4a8a34ce20e259b011035349a8432 21284 libpod_4.7.1+ds4-5.debian.tar.xz
+ 2be845ff1b5c8c7914841c67bfc19da1630d29d1 4360 libpod_4.7.1+ds4-5.dsc
+ bfeca4a20e7c65a6de0731a9e855930b42e50c41 2789508 libpod_4.7.1+ds4.orig.tar.xz
+Checksums-Sha256:
+ e32052d32a362044ab002d889e419f77e6f6dbcca1d61185ea5b73e092ca0f43 21284 libpod_4.7.1+ds4-5.debian.tar.xz
+ f5bfd273378fe88ae33feab61deaabfb2fc93bad330b1c85bc6de99decf80d60 4360 libpod_4.7.1+ds4-5.dsc
+ 11d59e461f94e5b1b1d412c890e61d4113201c96a072d5947ada36aea72ef841 2789508 libpod_4.7.1+ds4.orig.tar.xz
+Checksums-Sha512:
+ c4dfc9dc59734464f333c563d6dc1830e470f1b8f8fc46a63925ec6e29180e1312fe529a2098ef8c540ae36ec2232271dc8b69e1dd6874eb7cf823f846b2fe90 21284 libpod_4.7.1+ds4-5.debian.tar.xz
+ 7813a2783f5ccbde6a40ecb6a2bda801c008d770a3a3493243f9d46b31b162fbbdf42e9ce7536943e83564e1e04cc34d7044cba61ad811e1efb77016433bd480 4360 libpod_4.7.1+ds4-5.dsc
+ 0177e269cfad576c6aae61bac8d213f4e4445921c22f31b6e2e4f90bdee3c4324862b3139c57d138b3e79d6407732e1e288bf7ad426899c6f344a842958c683a 2789508 libpod_4.7.1+ds4.orig.tar.xz
+Go-Import-Path: github.com/containers/podman
+Homepage: https://github.com/containers/podman
+Package-List:
+ podman deb admin optional arch=any
+ podman-docker deb admin optional arch=any
+ podman-remote deb admin optional arch=any
+Testsuite: autopkgtest
+Testsuite-Triggers: @builddeps@, buildah, catatonit, containers-storage, dbus-user-session, fuse-overlayfs, iptables, slirp4netns, uidmap
+Uploaders: Dmitry Smirnov <onlyjob@debian.org>, Reinhard Tartler <siretart@tauware.de>, Faidon Liambotis <paravoid@debian.org>,
+Vcs-Browser: https://salsa.debian.org/debian/libpod
+Vcs-Git: https://salsa.debian.org/debian/libpod.git
+
+Package: libseccomp
+Binary: libseccomp-dev, libseccomp2, seccomp, python3-seccomp
+Version: 2.5.4-1+loong64+1
+Maintainer: Kees Cook <kees@debian.org>
+Build-Depends: debhelper-compat (= 12), linux-libc-dev, dh-python <!nopython>, python3-all-dev:any <!nopython>, libpython3-all-dev <!nopython>, cython3:native <!nopython>, valgrind [amd64 arm64 armhf i386 mips mips64 powerpc ppc64 ppc64el s390x] <!nocheck>, gperf
+Architecture: linux-any
+Standards-Version: 3.9.7
+Format: 3.0 (quilt)
+Directory: pool/main/libs/libseccomp
+Files:
+ cd08f1116029ef8420f1c1e1467d8ed6 31728 libseccomp_2.5.4-1+loong64+1.debian.tar.xz
+ 81f21b75bf3b715dd896ff5e55b05691 1580 libseccomp_2.5.4-1+loong64+1.dsc
+ 74008bb33234e0c2a0d998e7bee5c625 637228 libseccomp_2.5.4.orig.tar.gz
+Checksums-Sha1:
+ 11caf586a81500319a7a2c93853ace1aa56675ed 31728 libseccomp_2.5.4-1+loong64+1.debian.tar.xz
+ 98b5729bad4b94f22469270213dfc9c8dd734cfe 1580 libseccomp_2.5.4-1+loong64+1.dsc
+ a238b99356180de849e38b21aaad871b7630ae0e 637228 libseccomp_2.5.4.orig.tar.gz
+Checksums-Sha256:
+ 327e1106e0c83419e89709050fe8505a77d88fef277256c03668b33d894ed52a 31728 libseccomp_2.5.4-1+loong64+1.debian.tar.xz
+ 514c90b8ae858ec6b2e21c3acb6bf4bfb48d546c11a4c5aaa4ebffc640def246 1580 libseccomp_2.5.4-1+loong64+1.dsc
+ d82902400405cf0068574ef3dc1fe5f5926207543ba1ae6f8e7a1576351dcbdb 637228 libseccomp_2.5.4.orig.tar.gz
+Checksums-Sha512:
+ b6f774c1559f92f55eb64349ab6def8f8b481b1d899a1645e03f6ce748aa9651114e64e0b6a0d0f9c4fc2b1fcb023658f90aed6ca651b6192b4a11eb4e1756ba 31728 libseccomp_2.5.4-1+loong64+1.debian.tar.xz
+ 7996748231c778ceaa6653a5bacce74b541f02440a3dddf31a35265b3df6a4ad9c7fbe9a29e2da794e4a46218a89c4a284b4ab5ecc34cd40c53e5f37d423be4f 1580 libseccomp_2.5.4-1+loong64+1.dsc
+ 92650bd7d1d48b383f402a536b97a017fd0f6ad1234daf4b938d01c92e8d134a01d2f2dd45fd9e2d025d7556bd1386ec360402145a87f20580c85949d62cea0e 637228 libseccomp_2.5.4.orig.tar.gz
+Homepage: https://github.com/seccomp/libseccomp
+Package-List:
+ libseccomp-dev deb libdevel optional arch=linux-any
+ libseccomp2 deb libs optional arch=linux-any
+ python3-seccomp deb python optional arch=linux-any profile=!nopython
+ seccomp deb utils optional arch=linux-any
+Testsuite: autopkgtest
+Testsuite-Triggers: build-essential
+Uploaders: Luca Bruno <lucab@debian.org>, Felix Geyer <fgeyer@debian.org>
+Vcs-Browser: https://salsa.debian.org/debian/libseccomp
+Vcs-Git: https://salsa.debian.org/debian/libseccomp.git
+

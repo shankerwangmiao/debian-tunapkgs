@@ -1,0 +1,17 @@
+Package: grub-mount-udeb
+Priority: optional
+Section: debian-installer
+Installed-Size: 1603
+Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>
+Architecture: loong64
+Source: grub2
+Version: 2.12~rc1-11
+Depends: libc6-udeb (>= 2.37), libdevmapper1.02.1-udeb (>= 2:1.02.185), libfuse3-3-udeb (>= 3.14.0)
+Filename: pool/main/g/grub2/grub-mount-udeb_2.12~rc1-11_loong64.udeb
+Size: 404692
+MD5sum: 3be1227c915000f0d2eff929248a093c
+SHA1: 24483359524cc0d6239371dc0c20cf7d7c0e37a9
+SHA256: c5956d019753c458f986d10c4f032c40812e35773bee34d770dbac713e3a79a3
+SHA512: 2be757dcda84923e41578473f300b37a28cdadd587204f4e6aaf1a58c28bc99cc9ffc3b5e777c4124411e36e211f345fe488388e615dd0c87c214f299cf20d92
+Description: export GRUB filesystems using FUSE
+

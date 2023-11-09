@@ -1,0 +1,6 @@
+Origin: debian-tunapkgs sid-tunapkgs
+Label: debian-tunapkgs sid-tunapkgs
+Archive: sid-tunapkgs
+Architecture: loong64
+Component: main
+Acquire-By-Hash: yes
