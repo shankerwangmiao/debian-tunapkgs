@@ -30,12 +30,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          lfs: "true"
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - run: |
+          ref=$(git rev-parse HEAD)
           while read dir; do
-            sed "s@\@PATH\@@${dir#.}@" _index.html > "$dir/index.html"
+            sed "s@\@PATH\@@${dir#.}@;s@\@REF\@@${ref}@;" _index.html > "$dir/index.html"
           done < <(find . -type d)
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
